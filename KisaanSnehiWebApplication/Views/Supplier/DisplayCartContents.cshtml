@@ -1,0 +1,65 @@
+﻿@model IEnumerable<KisaanSnehiWebApplication.Models.CropPurchaseModel>
+
+@{
+    ViewData["Title"] = "DisplayCartContents";
+    Layout = "~/Views/Shared/_SupplierLayout.cshtml";
+}
+
+<section id="DisplayCrops" class="d-flex flex-column justify-content-center align-items-center" style="margin-left:320px">
+    <h1>Cart</h1>
+    <hr />
+    <table class="table">
+        @Html.ActionLink("Buy Now", "GenerateBill", "Supplier", new { @class = "btn" })
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.FarmerId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CropId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CropPurchaseQuantity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CropBillAmount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CropPurchaseDate)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FarmerId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CropId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CropPurchaseQuantity)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CropBillAmount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CropPurchaseDate)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Remove from cart", "RemoveFromCart", "Supplier", new { id = item.CropId })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    @*<p> </p>
+    <div>
+            <a asp-action="SupplierProfile">Back</a>
+    </div>*@
+
+</section>
+    

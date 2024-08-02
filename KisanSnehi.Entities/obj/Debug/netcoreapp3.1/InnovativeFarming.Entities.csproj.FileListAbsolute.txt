@@ -1,0 +1,13 @@
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.Entities\bin\Debug\netcoreapp3.1\InnovativeFarming.Entities.deps.json
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.Entities\bin\Debug\netcoreapp3.1\InnovativeFarming.Entities.runtimeconfig.json
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.Entities\bin\Debug\netcoreapp3.1\InnovativeFarming.Entities.runtimeconfig.dev.json
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.Entities\bin\Debug\netcoreapp3.1\InnovativeFarming.Entities.dll
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.Entities\bin\Debug\netcoreapp3.1\InnovativeFarming.Entities.pdb
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.Entities\obj\Debug\netcoreapp3.1\InnovativeFarming.Entities.csproj.AssemblyReference.cache
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.Entities\obj\Debug\netcoreapp3.1\InnovativeFarming.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.Entities\obj\Debug\netcoreapp3.1\InnovativeFarming.Entities.AssemblyInfoInputs.cache
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.Entities\obj\Debug\netcoreapp3.1\InnovativeFarming.Entities.AssemblyInfo.cs
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.Entities\obj\Debug\netcoreapp3.1\InnovativeFarming.Entities.csproj.CoreCompileInputs.cache
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.Entities\obj\Debug\netcoreapp3.1\InnovativeFarming.Entities.dll
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.Entities\obj\Debug\netcoreapp3.1\InnovativeFarming.Entities.pdb
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.Entities\obj\Debug\netcoreapp3.1\InnovativeFarming.Entities.genruntimeconfig.cache

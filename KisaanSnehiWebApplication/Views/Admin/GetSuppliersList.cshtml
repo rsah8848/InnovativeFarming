@@ -1,0 +1,102 @@
+﻿@model IPagedList<KisaanSnehiWebApplication.Models.RegistrationModel>
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+
+@{
+    ViewData["Title"] = "GetSuppliersList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<head>
+    <style>
+
+        /* The heart of the matter */
+
+        .horizontal-scrollable > .row {
+            white-space: nowrap;
+        }
+
+            .horizontal-scrollable > .row > .col-xs-4 {
+                display: inline-block;
+                float: none;
+            }
+    </style>
+</head>
+<body>
+    @*    <section id="Profile" class="d-flex flex-column justify-content-center align-items-center container .horizontal-scrollable">
+    *@
+
+
+    <div style="margin-left: 25%; margin-right: 2%; overflow: auto;">
+        <h1>Supplier's List</h1>
+
+
+        <table style="overflow: auto;" class="table table-striped table-bordered table-sm">
+            <thead>
+                <tr>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().EmailId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().PhoneNo)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().Address)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().RegDate)
+                    </th>
+
+                    
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EmailId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PhoneNo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Address)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.RegDate)
+                        </td>
+
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+        @Html.PagedListPager((IPagedList)Model, page => Url.Action("GetSupplierList", "Admin", new { page = page }),
+       new X.PagedList.Web.Common.PagedListRenderOptionsBase
+       {
+           DisplayItemSliceAndTotal = true,
+           ContainerDivClasses = new[] { "navigation" },
+           LiElementClasses = new[] { "page-item" },
+           PageClasses = new[] { "page-link" },
+       }
+       )
+
+    </div>
+    @*</section>*@
+</body>
+<script type="text/javascript">
+
+        $(document).ready(function () {
+            $('ul.pagination > li.disabled > a').addClass('page-link');
+        });
+</script>

@@ -1,0 +1,106 @@
+﻿@model KisaanSnehiWebApplication.Models.RegistrationModel
+
+@{
+    ViewData["Title"] = "Profile";
+    Layout = "~/Views/Shared/_FarmerLayout.cshtml";
+}
+<head>
+
+
+    <link href="~/CSSNew/assets/css/styleProfile.css" rel="stylesheet">
+    <style>
+
+        button:hover, button:focus {
+            text-decoration: none !important;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+
+        $(function () {
+            var PlaceHolderElement = $('#PlaceHolderHere')
+            $('button[data-toggle="ajax-modal"]').click(function (event) {
+
+                var url = $(this).data('url');
+                var decodedUrl = decodeURIComponent(url);
+                $.get(decodedUrl).done(function (data) {
+                    PlaceHolderElement.html(data);
+                    PlaceHolderElement.find('.modal').modal('show');
+                })
+            })
+
+            PlaceHolderElement.on('click', '[data-dismiss="modal"]', function (event) {
+
+                PlaceHolderElement.find('.modal').modal('hide');
+
+            })
+
+        })
+
+    </script>
+</head>
+
+<section id="Profile" class="d-flex flex-column justify-content-center align-items-center" style="margin-left:320px;">
+
+    <div id="PlaceHolderHere"></div>
+
+    <div style="margin-left: 10%; margin-right: 20%;">
+        <h1>Profile</h1>
+        <h4></h4>
+        <hr />
+        <dl class="row">
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.EmailId)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.EmailId)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.PhoneNo)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.PhoneNo)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Address)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Address),
+            </dd>
+            <dt class="col-sm-2">
+
+            </dt>
+            <dd class="col-sm-10">
+                @ViewBag.City, @ViewBag.State, (Pin : @ViewBag.Pin)
+            </dd>
+        </dl>
+
+        <hr />
+
+        <div>
+            
+                @Html.ActionLink("Edit Profile", "EditProfile", new { Model = Model }) |
+                @Html.ActionLink("Change Password", "ChangePassword", new { Model = Model }) |
+                @Html.ActionLink("Change Profile Picture", "UploadProfilePicture", new { Model = Model }) |
+                @Html.ActionLink("Remove Profile Picture", "RemoveProfilePicture", new { Model = Model }) |
+                @*@Html.ActionLink("Deactivate account", "DeactivateAccount", new { id = Model.RegId })*@
+
+                <button style="border:hidden; background-color:white; color:dodgerblue; text-decoration:underline;" data-toggle="ajax-modal"
+                    data-target="#DeactivateAccount"  data-url="@Url.Action($"DeactivateAccount/{Model.RegId}")">
+                    Deactivate Account
+
+                </button>
+            
+
+        </div>
+    </div>
+
+</section>

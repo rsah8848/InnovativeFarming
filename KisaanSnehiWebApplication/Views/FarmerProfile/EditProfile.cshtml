@@ -1,0 +1,101 @@
+﻿@model KisaanSnehiWebApplication.Models.RegistrationModel
+
+@{
+    ViewData["Title"] = "EditProfile";
+    Layout = "~/Views/Shared/_FarmerLayout.cshtml";
+}
+
+<head>
+    <script>
+        var regex = /^(\+\d)*\s*(\(\d{3}\)\s*)*\d{3}(-{0,1}|\s{0,1})\d{2}(-{0,1}|\s{0,1})\d{2}$/;
+        $(document).ready(function () {
+
+            $('input#phoneNumber').on('blur', function () {
+                if ($(this).val() == "") {
+                    alert("Please enter the phone number");
+                }
+                if ($(this).val().length != 10 ) {
+                    alert("Please enter valid phone number");
+                }
+                if ($(this).val() == "") {
+                    alert("Please enter the phone number");
+                }
+                
+                if (!regex.Match($(this).val())){
+                    alert("Please enter valid phone number");
+                }
+            })
+            $('input#address').on('blur', function () {
+                if ($(this).val() == "") {
+                    alert("Please enter the address");
+                }
+            })
+        });
+    </script>
+
+</head>
+
+@*@if (ViewBag.ErrorMessage != null)
+{
+    <script type="text/javascript">
+             
+        window.onload = function () {
+            
+                alert("@ViewBag.ErrorMessage");
+                window.location.href = "FarmerProfilePage";
+            };
+    </script>
+  
+        
+
+}*@
+
+
+<section class="d-flex flex-column justify-content-center align-items-center">
+    
+    <div class="row" style="margin-left: 10%; margin-right: 20%;">
+        <div @*class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch"*@>
+            <div>
+                <h1>Edit Profile</h1>
+                <hr />
+            </div>
+            <form asp-action="EditProfile">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label" style="font-weight:bold;"></label>
+                    <input readonly asp-for="Name" class="form-control" style="width:400px;" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div><br />
+
+                <div class="form-group">
+                    <label asp-for="PhoneNo" class="control-label" style="font-weight:bold;"></label>
+                    <input asp-for="PhoneNo" class="form-control" style="width:400px;" id="phoneNumber" />
+                    <span asp-validation-for="PhoneNo" class="text-danger"></span>
+                </div><br />
+                <div class="form-group">
+                    <label asp-for="Address" class="control-label" style="font-weight:bold;"></label>
+                    <input asp-for="Address" class="form-control" style="width:400px;" id="address"/>
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div><br />
+                <div class="form-group">
+                    <label class="control-label" style="font-weight:bold;">choose city</label>
+                    <select asp-for="LocationId" class="form-control"
+                            asp-items="@(new SelectList(@ViewBag.locations,"LocationId","City"))" style="width:400px;">
+                    </select>
+                </div>
+                <br /> <br />
+
+                <div class="form-group">
+                    <input type="submit" value="Update" class="btn btn-primary" style="background-color:forestgreen; color:white;" />
+
+                    <button formaction="@Url.Action("FarmerProfilePage", "FarmerProfile")#Profile" class="btn btn-outline-secondary" >Cancel</button>
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</section>

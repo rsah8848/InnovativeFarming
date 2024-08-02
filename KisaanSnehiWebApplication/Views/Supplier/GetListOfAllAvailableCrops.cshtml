@@ -1,0 +1,65 @@
+﻿@model IEnumerable<KisaanSnehiWebApplication.Models.CropModel>
+
+@{
+    ViewData["Title"] = "GetListOfAllAvailableCrops";
+    Layout = "~/Views/Shared/_SupplierLayout.cshtml";
+}
+
+<section id="DisplayCrops" class="d-flex flex-column justify-content-center align-items-center" style="margin-left:320px">
+    <h1>List Of All Available Crops</h1>
+    <hr />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.CropId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FarmerId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CropName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CropQuantity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CropDesc)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CropPrice)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CropId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FarmerId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CropName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CropQuantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CropDesc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CropPrice)
+                </td>
+                <td>
+                    @Html.ActionLink("Add To Cart", "GetCropsBasedOnID", "Supplier", new { id = item.CropId })
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</section>
+    

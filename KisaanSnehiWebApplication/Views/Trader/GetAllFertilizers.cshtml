@@ -1,0 +1,138 @@
+﻿@using X.PagedList.Mvc.Core
+@using X.PagedList
+
+@model X.PagedList.IPagedList<KisaanSnehiWebApplication.Models.FertilizerModel>
+
+@{
+    ViewData["Title"] = "GetAllFertilizers";
+    Layout = "~/Views/Shared/_TraderLayout.cshtml";
+}
+
+<head>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+
+    <script type="text/javascript">
+
+
+        $(function () {
+            var PlaceHolderElement = $('#PlaceHolderHere')
+            $('button[data-toggle="ajax-modal"]').click(function (event) {
+                
+                var url = $(this).data('url');
+                var decodedUrl = decodeURIComponent(url);
+                $.get(decodedUrl).done(function (data) {
+                    PlaceHolderElement.html(data);
+                    PlaceHolderElement.find('.modal').modal('show');
+                })
+            })
+
+            PlaceHolderElement.on('click', '[data-dismiss="modal"]', function (event) {
+
+                PlaceHolderElement.find('.modal').modal('hide');
+
+            })
+
+        })
+
+    </script>
+    
+</head>
+<section id="GetAllFertilizers" class="d-flex flex-column justify-content-center align-items-center" style="margin-left:320px">
+    <p style="text-align:center">
+
+        <div id="PlaceHolderHere"></div>
+        @*<header>
+            <h1 style="text-align:center; color:darkgreen">MY FERTILIZERS</h1><br />
+        </header>*@
+
+        @using (Html.BeginForm("GetAllFertilizers", "Trader", FormMethod.Get))
+        {
+            <button type="button" class="btn btn-primary" data-toggle="ajax-modal"
+                    data-target="#AddFertilizer" data-url="@Url.Action($"AddFertilizer")" style="background-color:forestgreen">
+                Add Fertilizer
+            </button>
+            @Html.TextBox("searchName", null, new { style = "height:36px; ", placeholder = "Search name..." })
+            <button type="submit" class="btn btn-primary" style="background-color:forestgreen;color:white;">
+            <i class="icofont icofont-search-2"></i>
+            </button>
+        }
+    </p>
+    <br />
+
+
+    <table class="table">
+        <thead></thead>
+        @{
+            int i = 5;
+            if (Model.Count() == 0)
+            {
+                @:<tr>
+                    @:<td colspan="3" style="color:forestgreen; text-align:center;">No data found.</td>
+                @:</tr>
+            }
+            else
+            {
+                foreach (var item in Model)
+                {
+                    if (i == 5 || i == 0)
+                    {
+                        @:<tr>
+                        }
+
+
+                              <td style="align-items:center">
+                                  <img src="@("~/FertilizerImages/" + item.Image)" asp-append-version="true" alt="" class="img-fluid"
+                                       style="width:200px; height:170px;"> <br />
+                                        @Html.Label("Fertilizer Name") : @Html.DisplayFor(modelItem => item.FertilizerName) <br />
+                                       @Html.Label("Fertilizer Price") : Rs. @Html.DisplayFor(modelItem => item.FertilizerPrice) <br />
+                                  @*@Html.DisplayNameFor(model => model.FertilizerName) : @Html.DisplayFor(modelItem => item.FertilizerName) <br />
+                                  @Html.DisplayNameFor(model => model.FertilizerPrice) : @Html.DisplayFor(modelItem => item.FertilizerPrice) <br />*@
+
+                                  <button type="button" class="btn btn-primary" style="background-color:white;color:forestgreen;border-color:white"  data-toggle="ajax-modal"
+                                          data-target="#UpdateFertilizer" data-url="@Url.Action($"UpdateFertilizer/{item.FertilizerId}")">
+                                      <i class="icofont-ui-edit"></i>
+                                  </button>
+                                  <button type="button" class="btn btn-primary" style="background-color:white;color:forestgreen; border-color:white"  data-toggle="ajax-modal"
+                                          data-target="#FertilizerDetails" data-url="@Url.Action($"FertilizerDetails/{item.FertilizerId}")">
+                                      <i class="bx bx-detail"></i>
+                                  </button>
+                                  <button type="button" class="btn btn-primary" style="background-color:white;color:forestgreen; border-color:white" data-toggle="ajax-modal"
+                                    data-target="#DeleteFertilizer" data-url="@Url.Action($"DeleteFertilizer/{item.FertilizerId}")">
+                                <i class="icofont-delete-alt"></i>
+                            </button>
+
+
+                              </td>
+                        i -= 1;
+
+                        if (i == 0)
+                        {
+                            i = 5;
+                        @:</tr>
+                    }
+                }
+            }
+        }
+
+
+    </table>
+
+ @Html.PagedListPager((IPagedList)Model, page => Url.Action("GetAllFertilizers", new { page }),
+        new X.PagedList.Web.Common.PagedListRenderOptionsBase
+        {
+            DisplayItemSliceAndTotal = true,
+            ContainerDivClasses = new[] { "navigation" },
+            LiElementClasses = new[] { "page-item" },
+            PageClasses = new[] { "page-link" }
+        }
+        )
+
+</section>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('ul.pagination > li.disabled > a').addClass('page-link');
+    });
+</script>

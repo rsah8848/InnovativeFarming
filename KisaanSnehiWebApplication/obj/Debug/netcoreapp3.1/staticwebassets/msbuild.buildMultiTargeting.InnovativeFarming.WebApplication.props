@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\InnovativeFarming.WebApplication.props" />
+</Project>

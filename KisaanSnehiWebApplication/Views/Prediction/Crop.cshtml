@@ -1,0 +1,75 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model KisaanSnehiWebApplication.Controllers.CropPlannerDto
+
+@{
+    ViewData["Title"] = "Crop Prediction";
+    Layout = "~/Views/Shared/_FarmerLayout.cshtml";
+}
+
+@if (ViewBag.Message != null)
+{
+    <script type="text/javascript">
+        window.onload = function () {
+            alert("@ViewBag.Message");
+        };
+    </script>
+
+}
+
+
+<style>
+    /*planner css*/
+    .planner-container {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .planning {
+        display: flex;
+        width: 500px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem;
+        box-shadow: 1px -3px 10px rgba(0,0,0,1);
+        border-radius: 15px;
+    }
+
+        .planning input {
+            border-radius: 10px;
+            border: 1px solid rgba(73, 72, 72, 0.644);
+            height: 20px;
+        }
+
+            .planning input ::placeholder {
+                text-align: center;
+            }
+</style>
+
+<div class="planner">
+    <div class="planner-container">
+
+        <form method="post" asp-action="CropPrediction" class="planning">
+            <h3>Smart Crop planner</h3>
+            <span>Nitrogen</span>
+            <input type="text" placeholder="Enter the N Value" asp-for="N">
+            <span>Phosphorous</span>
+            <input type="text" placeholder="Enter the P Value" asp-for="P">
+            <span>Potassium</span>
+            <input type="text" placeholder="Enter the K Value" asp-for="K">
+            <span>Rainfall</span>
+            <input type="text" placeholder="Enter the Rainfall Value" asp-for="Rainfall">
+            <span>Humidity</span>
+            <input type="text" placeholder="Enter the Humidity Value" asp-for="Humidity">
+            <span>Temperature</span>
+            <input type="text" placeholder="Enter the Temperature Value" asp-for="Temperature">
+            <span>PH value</span>
+            <input type="text" placeholder="Enter the pH Value" asp-for="Ph">
+            <button class="button" type="submit">Submit</button>
+        </form>
+    </div>
+</div>

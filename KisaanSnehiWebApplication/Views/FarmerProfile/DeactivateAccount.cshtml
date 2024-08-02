@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewData["Title"] = "DeactivateAccount";
+    Layout = "~/Views/Shared/_FarmerLayout.cshtml";
+}
+
+@{
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <script type="text/javascript">
+
+            window.onload = function () {
+                alert("deactivation failed");
+                window.location.href = "Index";
+            };
+        </script>
+
+    }
+}
+
+
+
+<div class="modal fade" id="DeactivateAccount">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="DeactivateAccount" style="color:black">Account Deactivation</h4>
+                <button type="button" class="btn btn-close" data-dismiss="modal" style="background-color:forestgreen; color:white;">
+                </button>
+            </div>
+            
+            <div class="modal-body">
+
+                <form asp-action="DeactivateAccount" enctype="multipart/form-data">
+
+                    <p>Are you sure you want to deactivate your account?</p>
+                    <br />
+                    <br />
+                    
+
+                    <div class="form-group">
+                        <input type="submit" value="Yes" class="btn btn-primary" style="background-color:forestgreen; color:white;" />
+                        <button type="button" class="btn btn-secondary close" data-dismiss="modal" style="background-color:forestgreen; color:white;">
+                            <span>No</span>
+                        </button>
+
+                    </div>
+                </form>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+</div>

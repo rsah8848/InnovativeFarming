@@ -1,0 +1,42 @@
+﻿@model KisaanSnehiWebApplication.Models.FeedbackModel
+
+@{
+    ViewData["Title"] = "AddFeedback";
+Layout = "~/Views/Shared/_TraderLayout.cshtml";
+}
+
+<section id="Feedback" class="d-flex flex-column justify-content-center align-items-center" style="margin-left:330px;">
+    <h4 style="text-decoration-color:forestgreen">FEEDBACK</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="AddFeedback" >
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                
+                <div class="form-group">
+                    <label asp-for="FeedbackDesc" class="control-label">Feedback Message</label>
+                    @*<textarea id="w3review" asp-for="FeedbackDesc" class="form-control"
+                              name="w3review" rows="4" cols="50"></textarea>*@
+                    @Html.TextAreaFor(Model=>Model.FeedbackDesc, new { style= "width:400px; height:200px; border-color:forestgreen;" })
+                    @*<input asp-for="FeedbackDesc" class="form-control" />*@
+                    <span asp-validation-for="FeedbackDesc" class="text-danger"></span>
+                </div>
+                 <br /> <br />
+                        <div class="form-group">
+                            <input type="submit" value="Send" class="btn btn-primary" style="background-color:mediumvioletred; color:white; border:20px; border-width:50px;" />
+                                    
+                            <button formaction="@Url.Action("TraderProfile", "Trader")#Profile" class="btn btn-secondary" style="background-color:forestgreen; 
+                             color:white; border-width:50px; border:20px;">Cancel</button>
+
+
+                        </div>
+            </form>
+        </div>
+    </div>
+
+    @*<div>
+        <a asp-action="Index">Back to List</a>
+    </div>*@
+
+</section>
+

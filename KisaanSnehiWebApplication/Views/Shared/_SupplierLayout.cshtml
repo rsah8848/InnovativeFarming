@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>iPortfolio Bootstrap Template - Index</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="~/CSSNew/assets/img/favicon.png" rel="icon">
+    <link href="~/CSSNew/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/CSSNew/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/CSSNew/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="~/CSSNew/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/CSSNew/assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="~/CSSNew/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/CSSNew/assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="~/CSSNew/assets/css/styleProfile.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+
+    <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="d-flex flex-column">
+
+            <div class="profile">
+                <img src="@("~/ImagesDB/"+ViewBag.ProfilePicture)" asp-append-version="true" alt="" class="img-fluid rounded-circle">
+                <h1 class="text-light"><a href="index.html">@ViewBag.Name</a></h1>
+                @*<div class="social-links mt-3 text-center">
+                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>*@
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li class="active"><a href="@Url.Action("SupplierHome", "Supplier")#Hero" style="text-decoration:none;"><i class="bx bx-home"></i> <span>Home</span></a></li>
+                    <li><a href="@Url.Action("SupplierProfile", "Supplier")#Profile" style="text-decoration:none;"><i class="bx bx-user"></i> <span>Profile</span></a></li>
+                    <li><a href="@Url.Action("DisplayCartContents", "Supplier")" style="text-decoration:none;"><i class="bx bx-shopping-bag"></i> <span>View Cart</span></a></li>
+                    <li><a href="@Url.Action("GetListOfCropsByName", "Supplier")#DisplayCropsByName" style="text-decoration:none;"><i class="bx bx-list-ol"></i><span>View Crops</span></a></li>
+                    <li><a href="@Url.Action("GetCropPurchaseHistory", "Supplier")" style="text-decoration:none;"><i class="bx bx-list-ol"></i><span>Purchase History</span></a></li>
+                    <li><a href="@Url.Action("AddSupplierFeedback", "Supplier")#AddFeedback" style="text-decoration:none;"><i class="bx bx-envelope"></i><span>Feedback</span></a></li>
+                    <li><a href="@Url.Action("LoginOrSignUp", "Home")" style="text-decoration:none;"><i class="bx bx-log-out-circle"></i><span>Logout</span></a></li>
+                    <li><a href="#resume" style="text-decoration:none;"><i class="bx bx-server"></i> <span>Others</span></a></li>
+
+                </ul>
+            </nav><!-- .nav-menu -->
+            <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+        </div>
+    </header><!-- End Header -->
+    <!-- ======= Contact Section ======= -->
+    <!--<section id="contact" class="contact">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Contact/ Feedback</h2>
+                <p>You can send feedback related to website and any issue that you are facing through the website. You feedback will be reviewed and resolved as soon as possible.</p>
+            </div>
+
+            <div class="row" data-aos="fade-in">
+
+                <div class="col-lg-5 d-flex align-items-stretch">
+                    <div class="info">
+
+                        <div class="address">
+                            <i class="icofont-google-map"></i>
+                            <h4>Location:</h4>
+                            <p>Mindtree, Doordarshan Colony, Gajapati Nagar, Bhubaneswar, Odisha 751013</p>
+                        </div>
+
+                        <div class="email">
+                            <i class="icofont-envelope"></i>
+                            <h4>Email:</h4>
+                            <p>Debi.Senapati@mindtree.com</p>
+                        </div>
+
+                        <div class="phone">
+                            <i class="icofont-phone"></i>
+                            <h4>Call:</h4>
+                            <p>+91 99805 56784</p>
+                        </div>
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14968.406651507325!2d85.8245398!3d20.2960587!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc676bf84303b0446!2sMindtree%20Kalinga%20Campus!5e0!3m2!1sen!2sin!4v1615349381991!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                    <form action="~/CSSNew/forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="name">Your Name</label>
+                                <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validate"></div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="name">Your Email</label>
+                                <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validate"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Subject</label>
+                            <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Feedback Message</label>
+                            <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                            <div class="validate"></div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your feedback has been recieved. Thank you!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Feedback</button></div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>-->
+    <!-- End Contact Section -->
+    <!-- ======= Footer ======= -->
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="~/CSSNew/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="~/CSSNew/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/CSSNew/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="~/CSSNew/assets/vendor/php-email-form/validate.js"></script>
+    <script src="~/CSSNew/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="~/CSSNew/assets/vendor/counterup/counterup.min.js"></script>
+    <script src="~/CSSNew/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/CSSNew/assets/vendor/venobox/venobox.min.js"></script>
+    <script src="~/CSSNew/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="~/CSSNew/assets/vendor/typed.js/typed.min.js"></script>
+    <script src="~/CSSNew/assets/vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/CSSNew/assets/js/mainProfile.js"></script>
+
+
+
+
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

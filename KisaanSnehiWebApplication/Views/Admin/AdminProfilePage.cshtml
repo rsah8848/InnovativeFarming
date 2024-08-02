@@ -1,0 +1,52 @@
+﻿@model KisaanSnehiWebApplication.Models.RegistrationModel
+
+@{
+    ViewData["Title"] = "AdminProfilePage";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<section id="Profile" class="d-flex flex-column justify-content-center align-items-center">
+
+    
+
+    <div style="margin-left: 25%; margin-right: 2%;">
+        <h1>Profile</h1>
+        <h4></h4>
+        <hr />
+        <dl class="row">
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.EmailId)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.EmailId)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.PhoneNo)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.PhoneNo)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Address)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Address)
+            </dd>
+
+        </dl>
+        <div>
+            @Html.ActionLink("Edit Profile", "EditAdminProfile", new { Model = Model }) |
+            @Html.ActionLink("Change Password", "ChangeAdminPassword", new { Model = Model }) |
+            @Html.ActionLink("Change Profile Picture", "UploadProfilePicture", new { Model = Model }) |
+            @Html.ActionLink("Deactivate account", "DeactivateAdmin", new { id = Model.RegId })
+        </div>
+
+    </div>
+</section>

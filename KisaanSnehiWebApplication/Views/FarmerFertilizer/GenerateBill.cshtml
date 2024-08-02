@@ -1,0 +1,44 @@
+﻿@model KisaanSnehiWebApplication.Models.ReceiptModel
+
+@{
+    ViewData["Title"] = "GenerateBill";
+    Layout = "~/Views/Shared/_FarmerLayout.cshtml";
+}
+
+<section id="GetListOfFertilizers" class="d-flex flex-column justify-content-center align-items-center" style="margin-left:320px">
+    <h1>Total Bill</h1>
+
+    <div>
+
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.FarmerID)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.FarmerID)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.NumberOfItems)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.NumberOfItems)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.TotalBill)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.TotalBill)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.ReciptDate)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.ReciptDate)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        @*@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+            <a asp-action="Index">Back to List</a>*@
+    </div>
+</section>

@@ -1,0 +1,61 @@
+﻿@model IEnumerable<KisaanSnehiWebApplication.Models.FertilizerPurchaseModel>
+
+@{
+    ViewData["Title"] = "GetFertilizerSalesHistory";
+     Layout = "~/Views/Shared/_TraderLayout.cshtml";
+}
+
+<section id="GetFertilizerSalesHistory" class="d-flex flex-column justify-content-center align-items-center" style="margin-left:330px;margin-right:30px;">
+<h1>Fertilizer Sales History</h1>
+<table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.FertilizerName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FarmerName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PhoneNo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FertilizerPurchaseQuantity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FertilizerBillAmount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FertilizerPurchaseDate)
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FertilizerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FarmerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PhoneNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FertilizerPurchaseQuantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FertilizerBillAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FertilizerPurchaseDate)
+                </td>
+
+            </tr>
+            }
+        </tbody>
+    </table>
+</section>

@@ -1,0 +1,86 @@
+﻿@model IEnumerable<KisaanSnehiWebApplication.Models.FertilizerPurchaseModel>
+
+@{
+    ViewData["Title"] = "DisplayCartContents";
+    Layout = "~/Views/Shared/_FarmerLayout.cshtml";
+}
+
+<style type="text/css">
+    .btn {
+        background-color: white;
+        color: forestgreen;
+        border: 2px solid forestgreen;
+    }
+
+        .btn:hover {
+            background-color: forestgreen;
+            color: white;
+        }
+</style>
+
+<section id="GetListOfFertilizers" class="d-flex flex-column justify-content-center align-items-center" style="margin-left:320px">
+    
+    <table class="table">
+        @Html.ActionLink("Confirm order", "GenerateBill", "FarmerFertilizer", new { @class = "btn" })
+        <thead>
+            <tr>
+                @*<th>
+                    @Html.DisplayNameFor(model => model.FertilizerPurchaseId)
+                </th>*@
+                <th>
+                    @Html.DisplayNameFor(model => model.FarmerId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TraderId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FertilizerId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FertilizerPurchaseQuantity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FertilizerBillAmount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FertilizerPurchaseDate)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    @*<td>
+                        @Html.DisplayFor(modelItem => item.FertilizerPurchaseId)
+                    </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FarmerId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TraderId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FertilizerId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FertilizerPurchaseQuantity)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FertilizerBillAmount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FertilizerPurchaseDate)
+                    </td>
+                    <td>
+                        @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+                        @Html.ActionLink("Remove", "RemoveFromCart", "FarmerFertilizer", new { id = item.FertilizerId }, new { @class = "btn" })
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</section>

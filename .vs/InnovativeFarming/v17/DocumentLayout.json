@@ -1,0 +1,1357 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D0C7252-1A02-43D6-A554-09ACA47D1E7E}|KisanSnehiAPI\\InnovativeFarming.API.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehiapi\\controllers\\farmerfertilizercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D0C7252-1A02-43D6-A554-09ACA47D1E7E}|KisanSnehiAPI\\InnovativeFarming.API.csproj|solutionrelative:kisansnehiapi\\controllers\\farmerfertilizercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\controllers\\predictioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\controllers\\predictioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F2EE7F-2B31-4008-B509-72A8B0A6123E}|KisanSnehi.Entities\\InnovativeFarming.Entities.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.entities\\usertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F2EE7F-2B31-4008-B509-72A8B0A6123E}|KisanSnehi.Entities\\InnovativeFarming.Entities.csproj|solutionrelative:kisansnehi.entities\\usertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F2EE7F-2B31-4008-B509-72A8B0A6123E}|KisanSnehi.Entities\\InnovativeFarming.Entities.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.entities\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F2EE7F-2B31-4008-B509-72A8B0A6123E}|KisanSnehi.Entities\\InnovativeFarming.Entities.csproj|solutionrelative:kisansnehi.entities\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F2EE7F-2B31-4008-B509-72A8B0A6123E}|KisanSnehi.Entities\\InnovativeFarming.Entities.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.entities\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F2EE7F-2B31-4008-B509-72A8B0A6123E}|KisanSnehi.Entities\\InnovativeFarming.Entities.csproj|solutionrelative:kisansnehi.entities\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F2EE7F-2B31-4008-B509-72A8B0A6123E}|KisanSnehi.Entities\\InnovativeFarming.Entities.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.entities\\fertilizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F2EE7F-2B31-4008-B509-72A8B0A6123E}|KisanSnehi.Entities\\InnovativeFarming.Entities.csproj|solutionrelative:kisansnehi.entities\\fertilizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F2EE7F-2B31-4008-B509-72A8B0A6123E}|KisanSnehi.Entities\\InnovativeFarming.Entities.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.entities\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F2EE7F-2B31-4008-B509-72A8B0A6123E}|KisanSnehi.Entities\\InnovativeFarming.Entities.csproj|solutionrelative:kisansnehi.entities\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F2EE7F-2B31-4008-B509-72A8B0A6123E}|KisanSnehi.Entities\\InnovativeFarming.Entities.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.entities\\croppurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F2EE7F-2B31-4008-B509-72A8B0A6123E}|KisanSnehi.Entities\\InnovativeFarming.Entities.csproj|solutionrelative:kisansnehi.entities\\croppurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F2EE7F-2B31-4008-B509-72A8B0A6123E}|KisanSnehi.Entities\\InnovativeFarming.Entities.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.entities\\crop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F2EE7F-2B31-4008-B509-72A8B0A6123E}|KisanSnehi.Entities\\InnovativeFarming.Entities.csproj|solutionrelative:kisansnehi.entities\\crop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A83F41E-7879-458E-8C58-7EDB98608CDD}|KisanSnehi.UnitTests\\InnovativeFarming.UnitTests.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.unittests\\farmerprofiletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A83F41E-7879-458E-8C58-7EDB98608CDD}|KisanSnehi.UnitTests\\InnovativeFarming.UnitTests.csproj|solutionrelative:kisansnehi.unittests\\farmerprofiletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\controllers\\farmerguidancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\controllers\\farmerguidancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\controllers\\farmerfertilizercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\controllers\\farmerfertilizercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D0C7252-1A02-43D6-A554-09ACA47D1E7E}|KisanSnehiAPI\\InnovativeFarming.API.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehiapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D0C7252-1A02-43D6-A554-09ACA47D1E7E}|KisanSnehiAPI\\InnovativeFarming.API.csproj|solutionrelative:kisansnehiapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D0C7252-1A02-43D6-A554-09ACA47D1E7E}|KisanSnehiAPI\\InnovativeFarming.API.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehiapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D0C7252-1A02-43D6-A554-09ACA47D1E7E}|KisanSnehiAPI\\InnovativeFarming.API.csproj|solutionrelative:kisansnehiapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D0C7252-1A02-43D6-A554-09ACA47D1E7E}|KisanSnehiAPI\\InnovativeFarming.API.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehiapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D0C7252-1A02-43D6-A554-09ACA47D1E7E}|KisanSnehiAPI\\InnovativeFarming.API.csproj|solutionrelative:kisansnehiapi\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.repositories\\generalmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|solutionrelative:kisansnehi.repositories\\generalmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.repositories\\admin\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|solutionrelative:kisansnehi.repositories\\admin\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562CE4A1-C24D-44BB-BB0C-CF32F2D4E0F0}|KisanSnehi.Services\\InnovativeFarming.Services.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.services\\admin\\adminservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562CE4A1-C24D-44BB-BB0C-CF32F2D4E0F0}|KisanSnehi.Services\\InnovativeFarming.Services.csproj|solutionrelative:kisansnehi.services\\admin\\adminservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.repositories\\admin\\iadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|solutionrelative:kisansnehi.repositories\\admin\\iadminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.repositories\\kisansnehidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|solutionrelative:kisansnehi.repositories\\kisansnehidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A83F41E-7879-458E-8C58-7EDB98608CDD}|KisanSnehi.UnitTests\\InnovativeFarming.UnitTests.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.unittests\\adminmoduletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A83F41E-7879-458E-8C58-7EDB98608CDD}|KisanSnehi.UnitTests\\InnovativeFarming.UnitTests.csproj|solutionrelative:kisansnehi.unittests\\adminmoduletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A83F41E-7879-458E-8C58-7EDB98608CDD}|KisanSnehi.UnitTests\\InnovativeFarming.UnitTests.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.unittests\\testtrader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A83F41E-7879-458E-8C58-7EDB98608CDD}|KisanSnehi.UnitTests\\InnovativeFarming.UnitTests.csproj|solutionrelative:kisansnehi.unittests\\testtrader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A83F41E-7879-458E-8C58-7EDB98608CDD}|KisanSnehi.UnitTests\\InnovativeFarming.UnitTests.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.unittests\\suppliermoduletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A83F41E-7879-458E-8C58-7EDB98608CDD}|KisanSnehi.UnitTests\\InnovativeFarming.UnitTests.csproj|solutionrelative:kisansnehi.unittests\\suppliermoduletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A83F41E-7879-458E-8C58-7EDB98608CDD}|KisanSnehi.UnitTests\\InnovativeFarming.UnitTests.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.unittests\\homemoduletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A83F41E-7879-458E-8C58-7EDB98608CDD}|KisanSnehi.UnitTests\\InnovativeFarming.UnitTests.csproj|solutionrelative:kisansnehi.unittests\\homemoduletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.repositories\\home\\homerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|solutionrelative:kisansnehi.repositories\\home\\homerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.repositories\\home\\ihomerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|solutionrelative:kisansnehi.repositories\\home\\ihomerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.repositories\\farmer\\ifarmerprofilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|solutionrelative:kisansnehi.repositories\\farmer\\ifarmerprofilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.repositories\\farmer\\ifarmerguidancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|solutionrelative:kisansnehi.repositories\\farmer\\ifarmerguidancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.repositories\\farmer\\ifarmerfertilizerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|solutionrelative:kisansnehi.repositories\\farmer\\ifarmerfertilizerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.repositories\\farmer\\farmerprofilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|solutionrelative:kisansnehi.repositories\\farmer\\farmerprofilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.repositories\\farmer\\farmerguidancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|solutionrelative:kisansnehi.repositories\\farmer\\farmerguidancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.repositories\\farmer\\farmerfertilizerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E5233B4-33F8-4173-B75F-53E890501A93}|KisanSnehi.Repositories\\InnovativeFarming.Repositories.csproj|solutionrelative:kisansnehi.repositories\\farmer\\farmerfertilizerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562CE4A1-C24D-44BB-BB0C-CF32F2D4E0F0}|KisanSnehi.Services\\InnovativeFarming.Services.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.services\\admin\\iadminservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{562CE4A1-C24D-44BB-BB0C-CF32F2D4E0F0}|KisanSnehi.Services\\InnovativeFarming.Services.csproj|solutionrelative:kisansnehi.services\\admin\\iadminservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{562CE4A1-C24D-44BB-BB0C-CF32F2D4E0F0}|KisanSnehi.Services\\InnovativeFarming.Services.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.services\\innovativefarming.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{562CE4A1-C24D-44BB-BB0C-CF32F2D4E0F0}|KisanSnehi.Services\\InnovativeFarming.Services.csproj|solutionrelative:kisansnehi.services\\innovativefarming.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\controllers\\tradercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\controllers\\tradercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\controllers\\suppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\controllers\\suppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\controllers\\farmerprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\controllers\\farmerprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\admin\\feedbackdeatails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\admin\\feedbackdeatails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\trader\\traderprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\trader\\traderprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\shared\\portfolio-details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\shared\\portfolio-details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\shared\\inner-page.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\shared\\inner-page.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\shared\\_traderlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\shared\\_traderlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\farmerprofile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\farmerprofile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\farmerprofile\\addfeedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\farmerprofile\\addfeedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\farmerprofile\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\farmerprofile\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\farmerprofile\\cropdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\farmerprofile\\cropdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\farmerprofile\\deactivateaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\farmerprofile\\deactivateaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\farmerprofile\\deletecrop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\farmerprofile\\deletecrop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\farmerprofile\\displayallcrops.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\farmerprofile\\displayallcrops.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\farmerprofile\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\farmerprofile\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\models\\cropmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\models\\cropmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\models\\croppurchasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\models\\croppurchasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\models\\feedbackmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\models\\feedbackmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\models\\fertilizermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\models\\fertilizermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\models\\fertilizerpurchasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\models\\fertilizerpurchasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\models\\guidancemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\models\\guidancemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\models\\locationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\models\\locationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\models\\receiptmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\models\\receiptmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\models\\registrationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\models\\registrationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\models\\supplierreceiptmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\models\\supplierreceiptmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\models\\usertypemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\models\\usertypemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A83F41E-7879-458E-8C58-7EDB98608CDD}|KisanSnehi.UnitTests\\InnovativeFarming.UnitTests.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.unittests\\farmerfertilizerguidancetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A83F41E-7879-458E-8C58-7EDB98608CDD}|KisanSnehi.UnitTests\\InnovativeFarming.UnitTests.csproj|solutionrelative:kisansnehi.unittests\\farmerfertilizerguidancetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\prediction\\plant.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\prediction\\plant.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\data\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\data\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\trader\\traderhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\trader\\traderhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\supplier\\supplierhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\supplier\\supplierhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\trader\\updatetraderprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\trader\\updatetraderprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F2EE7F-2B31-4008-B509-72A8B0A6123E}|KisanSnehi.Entities\\InnovativeFarming.Entities.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisansnehi.entities\\guidance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F2EE7F-2B31-4008-B509-72A8B0A6123E}|KisanSnehi.Entities\\InnovativeFarming.Entities.csproj|solutionrelative:kisansnehi.entities\\guidance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|d:\\fyp\\innovate farming\\kisan-snehi-project\\kisaansnehiwebapplication\\views\\prediction\\crop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D36AC75-E715-48CF-9216-99ADBAA1DF85}|KisaanSnehiWebApplication\\InnovativeFarming.WebApplication.csproj|solutionrelative:kisaansnehiwebapplication\\views\\prediction\\crop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Fertilizer.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Entities\\Fertilizer.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Entities\\Fertilizer.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Entities\\Fertilizer.cs",
+              "RelativeToolTip": "KisanSnehi.Entities\\Fertilizer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T10:17:31.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CropPurchase.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Entities\\CropPurchase.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Entities\\CropPurchase.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Entities\\CropPurchase.cs",
+              "RelativeToolTip": "KisanSnehi.Entities\\CropPurchase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T10:17:28.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Entities\\Feedback.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Entities\\Feedback.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Entities\\Feedback.cs",
+              "RelativeToolTip": "KisanSnehi.Entities\\Feedback.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T10:17:25.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehiAPI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "KisanSnehiAPI\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehiAPI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "KisanSnehiAPI\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T14:18:40.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAcwGwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T11:33:53.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PredictionController.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Controllers\\PredictionController.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Controllers\\PredictionController.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Controllers\\PredictionController.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Controllers\\PredictionController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T07:00:47.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FarmerFertilizerController.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehiAPI\\Controllers\\FarmerFertilizerController.cs",
+              "RelativeDocumentMoniker": "KisanSnehiAPI\\Controllers\\FarmerFertilizerController.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehiAPI\\Controllers\\FarmerFertilizerController.cs",
+              "RelativeToolTip": "KisanSnehiAPI\\Controllers\\FarmerFertilizerController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwCgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T05:41:25.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Location.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Entities\\Location.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Entities\\Location.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Entities\\Location.cs",
+              "RelativeToolTip": "KisanSnehi.Entities\\Location.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T10:17:33.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserType.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Entities\\UserType.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Entities\\UserType.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Entities\\UserType.cs",
+              "RelativeToolTip": "KisanSnehi.Entities\\UserType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T10:17:38.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Registration.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Entities\\Registration.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Entities\\Registration.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Entities\\Registration.cs",
+              "RelativeToolTip": "KisanSnehi.Entities\\Registration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T10:17:35.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FarmerFertilizerController.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Controllers\\FarmerFertilizerController.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Controllers\\FarmerFertilizerController.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Controllers\\FarmerFertilizerController.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Controllers\\FarmerFertilizerController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAIBJwAQBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T06:51:10.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FarmerGuidanceController.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Controllers\\FarmerGuidanceController.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Controllers\\FarmerGuidanceController.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Controllers\\FarmerGuidanceController.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Controllers\\FarmerGuidanceController.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAqwA4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T07:00:21.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FarmerProfileTest.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.UnitTests\\FarmerProfileTest.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.UnitTests\\FarmerProfileTest.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.UnitTests\\FarmerProfileTest.cs",
+              "RelativeToolTip": "KisanSnehi.UnitTests\\FarmerProfileTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T09:58:33.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Crop.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Entities\\Crop.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Entities\\Crop.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Entities\\Crop.cs",
+              "RelativeToolTip": "KisanSnehi.Entities\\Crop.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBoAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T14:18:22.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehiAPI\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "KisanSnehiAPI\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehiAPI\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "KisanSnehiAPI\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwBcAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T09:37:37.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AdminRepository.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Admin\\AdminRepository.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Repositories\\Admin\\AdminRepository.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Admin\\AdminRepository.cs",
+              "RelativeToolTip": "KisanSnehi.Repositories\\Admin\\AdminRepository.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAUwCQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T09:52:52.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AdminServices.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Services\\Admin\\AdminServices.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Services\\Admin\\AdminServices.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Services\\Admin\\AdminServices.cs",
+              "RelativeToolTip": "KisanSnehi.Services\\Admin\\AdminServices.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAowBIAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T05:17:21.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IAdminRepository.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Admin\\IAdminRepository.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Repositories\\Admin\\IAdminRepository.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Admin\\IAdminRepository.cs",
+              "RelativeToolTip": "KisanSnehi.Repositories\\Admin\\IAdminRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T09:45:52.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GeneralMethods.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\GeneralMethods.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Repositories\\GeneralMethods.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\GeneralMethods.cs",
+              "RelativeToolTip": "KisanSnehi.Repositories\\GeneralMethods.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAiwHQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T14:20:31.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehiAPI\\Startup.cs",
+              "RelativeDocumentMoniker": "KisanSnehiAPI\\Startup.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehiAPI\\Startup.cs",
+              "RelativeToolTip": "KisanSnehiAPI\\Startup.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwDkAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T14:24:04.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "KisanSnehiDBContext.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\KisanSnehiDBContext.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Repositories\\KisanSnehiDBContext.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\KisanSnehiDBContext.cs",
+              "RelativeToolTip": "KisanSnehi.Repositories\\KisanSnehiDBContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T03:34:25.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AdminModuleTest.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.UnitTests\\AdminModuleTest.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.UnitTests\\AdminModuleTest.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.UnitTests\\AdminModuleTest.cs",
+              "RelativeToolTip": "KisanSnehi.UnitTests\\AdminModuleTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T06:50:22.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "HomeRepository.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Home\\HomeRepository.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Repositories\\Home\\HomeRepository.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Home\\HomeRepository.cs",
+              "RelativeToolTip": "KisanSnehi.Repositories\\Home\\HomeRepository.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwEIAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T08:43:15.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "HomeModuleTest.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.UnitTests\\HomeModuleTest.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.UnitTests\\HomeModuleTest.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.UnitTests\\HomeModuleTest.cs",
+              "RelativeToolTip": "KisanSnehi.UnitTests\\HomeModuleTest.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T09:58:44.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SupplierModuleTest.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.UnitTests\\SupplierModuleTest.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.UnitTests\\SupplierModuleTest.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.UnitTests\\SupplierModuleTest.cs",
+              "RelativeToolTip": "KisanSnehi.UnitTests\\SupplierModuleTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T09:58:48.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TestTrader.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.UnitTests\\TestTrader.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.UnitTests\\TestTrader.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.UnitTests\\TestTrader.cs",
+              "RelativeToolTip": "KisanSnehi.UnitTests\\TestTrader.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T09:58:51.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IHomeRepository.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Home\\IHomeRepository.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Repositories\\Home\\IHomeRepository.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Home\\IHomeRepository.cs",
+              "RelativeToolTip": "KisanSnehi.Repositories\\Home\\IHomeRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T08:46:05.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IFarmerGuidanceRepository.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Farmer\\IFarmerGuidanceRepository.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Repositories\\Farmer\\IFarmerGuidanceRepository.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Farmer\\IFarmerGuidanceRepository.cs",
+              "RelativeToolTip": "KisanSnehi.Repositories\\Farmer\\IFarmerGuidanceRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T09:46:02.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IFarmerFertilizerRepository.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Farmer\\IFarmerFertilizerRepository.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Repositories\\Farmer\\IFarmerFertilizerRepository.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Farmer\\IFarmerFertilizerRepository.cs",
+              "RelativeToolTip": "KisanSnehi.Repositories\\Farmer\\IFarmerFertilizerRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T09:45:59.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "FarmerProfileRepository.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Farmer\\FarmerProfileRepository.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Repositories\\Farmer\\FarmerProfileRepository.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Farmer\\FarmerProfileRepository.cs",
+              "RelativeToolTip": "KisanSnehi.Repositories\\Farmer\\FarmerProfileRepository.cs",
+              "ViewState": "AQIAAI4BAAAAAAAAAIBQwIgAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T09:49:30.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "FarmerGuidanceRepository.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Farmer\\FarmerGuidanceRepository.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Repositories\\Farmer\\FarmerGuidanceRepository.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Farmer\\FarmerGuidanceRepository.cs",
+              "RelativeToolTip": "KisanSnehi.Repositories\\Farmer\\FarmerGuidanceRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T09:50:51.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IFarmerProfileRepository.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Farmer\\IFarmerProfileRepository.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Repositories\\Farmer\\IFarmerProfileRepository.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Farmer\\IFarmerProfileRepository.cs",
+              "RelativeToolTip": "KisanSnehi.Repositories\\Farmer\\IFarmerProfileRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T09:46:04.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "FarmerFertilizerRepository.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Farmer\\FarmerFertilizerRepository.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Repositories\\Farmer\\FarmerFertilizerRepository.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Repositories\\Farmer\\FarmerFertilizerRepository.cs",
+              "RelativeToolTip": "KisanSnehi.Repositories\\Farmer\\FarmerFertilizerRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T06:26:46.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "InnovativeFarming.Services.csproj",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Services\\InnovativeFarming.Services.csproj",
+              "RelativeDocumentMoniker": "KisanSnehi.Services\\InnovativeFarming.Services.csproj",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Services\\InnovativeFarming.Services.csproj",
+              "RelativeToolTip": "KisanSnehi.Services\\InnovativeFarming.Services.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-04T05:17:15.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "FarmerProfileController.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Controllers\\FarmerProfileController.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Controllers\\FarmerProfileController.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Controllers\\FarmerProfileController.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Controllers\\FarmerProfileController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T05:02:53.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IAdminServices.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Services\\Admin\\IAdminServices.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Services\\Admin\\IAdminServices.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Services\\Admin\\IAdminServices.cs",
+              "RelativeToolTip": "KisanSnehi.Services\\Admin\\IAdminServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T09:45:23.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "SupplierController.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Controllers\\SupplierController.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Controllers\\SupplierController.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Controllers\\SupplierController.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Controllers\\SupplierController.cs",
+              "ViewState": "AQIAAG0CAAAAAAAAAAA+wH4AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T07:01:03.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "TraderController.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Controllers\\TraderController.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Controllers\\TraderController.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Controllers\\TraderController.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Controllers\\TraderController.cs",
+              "ViewState": "AQIAAHkCAAAAAAAAAAAuwEIAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T02:01:34.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "FeedbackDeatails.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Admin\\FeedbackDeatails.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\Admin\\FeedbackDeatails.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Admin\\FeedbackDeatails.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\Admin\\FeedbackDeatails.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-01T03:01:37.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAIBJwCQCAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T06:32:06.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T13:21:38.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\FarmerProfile\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\FarmerProfile\\ChangePassword.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\FarmerProfile\\ChangePassword.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\FarmerProfile\\ChangePassword.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T11:14:13.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "TraderProfile.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Trader\\TraderProfile.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\Trader\\TraderProfile.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Trader\\TraderProfile.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\Trader\\TraderProfile.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-01T02:09:37.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "AddFeedback.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\FarmerProfile\\AddFeedback.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\FarmerProfile\\AddFeedback.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\FarmerProfile\\AddFeedback.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\FarmerProfile\\AddFeedback.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T11:14:22.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T11:14:48.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "inner-page.html",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Shared\\inner-page.html",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\Shared\\inner-page.html",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Shared\\inner-page.html",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\Shared\\inner-page.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-29T11:14:50.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "portfolio-details.html",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Shared\\portfolio-details.html",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\Shared\\portfolio-details.html",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Shared\\portfolio-details.html",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\Shared\\portfolio-details.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-29T11:14:50.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "CropDetails.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\FarmerProfile\\CropDetails.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\FarmerProfile\\CropDetails.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\FarmerProfile\\CropDetails.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\FarmerProfile\\CropDetails.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T11:14:11.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\FarmerProfile\\Index.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\FarmerProfile\\Index.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\FarmerProfile\\Index.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\FarmerProfile\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T01:42:27.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T11:13:20.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "_TraderLayout.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Shared\\_TraderLayout.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\Shared\\_TraderLayout.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Shared\\_TraderLayout.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\Shared\\_TraderLayout.cshtml",
+              "ViewState": "AQIAAGkCAAAAAAAAAAAqwEwAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T02:21:09.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "DeactivateAccount.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\FarmerProfile\\DeactivateAccount.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\FarmerProfile\\DeactivateAccount.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\FarmerProfile\\DeactivateAccount.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\FarmerProfile\\DeactivateAccount.cshtml",
+              "ViewState": "AQIAAAoAAAAAAAAAAABBwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T11:14:07.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "DeleteCrop.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\FarmerProfile\\DeleteCrop.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\FarmerProfile\\DeleteCrop.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\FarmerProfile\\DeleteCrop.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\FarmerProfile\\DeleteCrop.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T11:14:04.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "DisplayAllCrops.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\FarmerProfile\\DisplayAllCrops.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\FarmerProfile\\DisplayAllCrops.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\FarmerProfile\\DisplayAllCrops.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\FarmerProfile\\DisplayAllCrops.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T11:14:02.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "EditProfile.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\FarmerProfile\\EditProfile.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\FarmerProfile\\EditProfile.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\FarmerProfile\\EditProfile.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\FarmerProfile\\EditProfile.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T11:13:56.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "FeedbackModel.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\FeedbackModel.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Models\\FeedbackModel.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\FeedbackModel.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Models\\FeedbackModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T11:12:57.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "FertilizerPurchaseModel.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\FertilizerPurchaseModel.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Models\\FertilizerPurchaseModel.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\FertilizerPurchaseModel.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Models\\FertilizerPurchaseModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T11:12:51.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "ReceiptModel.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\ReceiptModel.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Models\\ReceiptModel.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\ReceiptModel.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Models\\ReceiptModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T08:33:17.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T08:33:13.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAqwFAAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T02:21:52.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "RegistrationModel.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\RegistrationModel.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Models\\RegistrationModel.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\RegistrationModel.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Models\\RegistrationModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T08:36:37.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "CropPurchaseModel.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\CropPurchaseModel.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Models\\CropPurchaseModel.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\CropPurchaseModel.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Models\\CropPurchaseModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T08:33:12.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "CropModel.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\CropModel.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Models\\CropModel.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\CropModel.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Models\\CropModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T08:33:07.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "SupplierReceiptModel.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\SupplierReceiptModel.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Models\\SupplierReceiptModel.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\SupplierReceiptModel.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Models\\SupplierReceiptModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T11:12:15.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "UserTypeModel.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\UserTypeModel.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Models\\UserTypeModel.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\UserTypeModel.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Models\\UserTypeModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T11:12:08.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "FertilizerModel.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\FertilizerModel.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Models\\FertilizerModel.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\FertilizerModel.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Models\\FertilizerModel.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAIBJwCEAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T08:33:14.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "LocationModel.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\LocationModel.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Models\\LocationModel.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\LocationModel.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Models\\LocationModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T08:33:16.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "GuidanceModel.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\GuidanceModel.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Models\\GuidanceModel.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Models\\GuidanceModel.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Models\\GuidanceModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T08:33:15.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "Plant.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Prediction\\Plant.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\Prediction\\Plant.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Prediction\\Plant.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\Prediction\\Plant.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAABBwDAAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-20T06:50:59.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Startup.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Startup.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Startup.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Startup.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAgwE8AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T09:53:43.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Program.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Program.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Program.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T09:53:41.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\appsettings.json",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\appsettings.json",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\appsettings.json",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-21T09:53:39.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAANsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T09:19:26.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T03:33:47.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "FarmerFertilizerGuidanceTests.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.UnitTests\\FarmerFertilizerGuidanceTests.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.UnitTests\\FarmerFertilizerGuidanceTests.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.UnitTests\\FarmerFertilizerGuidanceTests.cs",
+              "RelativeToolTip": "KisanSnehi.UnitTests\\FarmerFertilizerGuidanceTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T06:50:48.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAEYAAAAAAAAAAABBwA8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T02:33:21.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T03:33:56.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "TraderHome.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Trader\\TraderHome.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\Trader\\TraderHome.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Trader\\TraderHome.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\Trader\\TraderHome.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T02:22:16.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "SupplierHome.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Supplier\\SupplierHome.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\Supplier\\SupplierHome.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Supplier\\SupplierHome.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\Supplier\\SupplierHome.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T02:22:38.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T02:23:01.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "UpdateTraderProfile.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Trader\\UpdateTraderProfile.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\Trader\\UpdateTraderProfile.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Trader\\UpdateTraderProfile.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\Trader\\UpdateTraderProfile.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T02:01:57.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "Guidance.cs",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Entities\\Guidance.cs",
+              "RelativeDocumentMoniker": "KisanSnehi.Entities\\Guidance.cs",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisanSnehi.Entities\\Guidance.cs",
+              "RelativeToolTip": "KisanSnehi.Entities\\Guidance.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T13:55:51.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "Crop.cshtml",
+              "DocumentMoniker": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Prediction\\Crop.cshtml",
+              "RelativeDocumentMoniker": "KisaanSnehiWebApplication\\Views\\Prediction\\Crop.cshtml",
+              "ToolTip": "D:\\FYP\\Innovate Farming\\Kisan-Snehi-Project\\KisaanSnehiWebApplication\\Views\\Prediction\\Crop.cshtml",
+              "RelativeToolTip": "KisaanSnehiWebApplication\\Views\\Prediction\\Crop.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-20T06:50:33.721Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

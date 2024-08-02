@@ -1,0 +1,37 @@
+﻿@model KisaanSnehiWebApplication.Models.RegistrationModel
+
+@{
+    ViewData["Title"] = "UploadProfilePicture";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<section class="d-flex flex-column justify-content-center align-items-center">
+    <h1>Upload Profile Picture</h1>
+
+
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="UploadProfilePicture" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="ImageFile" class="control-label"></label>
+                    <input asp-for="ImageFile" accept="image/*" id="ImageProfile" />
+                    <span asp-validation-for="ImageFile" class="text-danger"></span>
+                    <p>  </p>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Upload" class="btn btn-primary" />
+                    <p>  </p>
+                    <input type="button" value="Cancel" action="@Url.Action("AdminProfilePage", "Admin")" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+    @Html.ActionLink("Remove Profile Picture", "RemoveProfilePicture", new { Model = Model })
+    <div>
+        <a asp-action="Index"></a>
+    </div>
+</section>

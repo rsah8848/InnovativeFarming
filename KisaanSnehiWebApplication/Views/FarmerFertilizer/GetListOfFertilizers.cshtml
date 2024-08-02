@@ -1,0 +1,150 @@
+﻿@model IEnumerable<KisaanSnehiWebApplication.Models.FertilizerModel>
+
+@{
+    ViewData["Title"] = "GetListOfFertilizers";
+    Layout = "~/Views/Shared/_FarmerLayout.cshtml";
+}
+
+
+
+<head>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+
+    <script type="text/javascript">
+
+
+        $(function () {
+            var PlaceHolderElement = $('#PlaceHolderHere')
+            $('button[data-toggle="ajax-modal"]').click(function (event) {
+
+                var url = $(this).data('url');
+                var decodedUrl = decodeURIComponent(url);
+                $.get(decodedUrl).done(function (data) {
+                    PlaceHolderElement.html(data);
+                    PlaceHolderElement.find('.modal').modal('show');
+                })
+            })
+
+            PlaceHolderElement.on('click', '[data-dismiss="modal"]', function (event) {
+
+                PlaceHolderElement.find('.modal').modal('hide');
+
+            })
+
+        })
+
+    </script>
+
+    <style type="text/css">
+        .btn {
+            background-color: white;
+            color: forestgreen;
+            border: 2px solid forestgreen;
+        }
+
+            .btn:hover {
+                background-color: forestgreen;
+                color: white;
+            }
+    </style>
+
+</head>
+
+<section id="GetListOfFertilizers" class="d-flex flex-column justify-content-center align-items-center" style="margin-left:320px">
+    <p style="text-align:center">
+
+        <div id="PlaceHolderHere"></div>
+
+
+        @using (Html.BeginForm("GetListOfFertilizers", "FarmerFertilizer", FormMethod.Get))
+        {
+            <button formaction="@Url.Action("DisplayCartContents", "FarmerFertilizer")" class="btn btn-secondary" style="background-color:forestgreen; color:white; border:18px;">Cart</button>
+
+            @*@Html.ActionLink("GO TO CART", "DisplayCartContents", "FarmerFertilizer", new { @class = "icofont-2x icofont-shopping-cart" })*@
+            @*<button type="button" class="btn btn-primary" data-toggle="ajax-modal" data-target="#DisplayCartContents"
+                    data-url="@Url.Action($"DisplayCartContents")" style="background-color:forestgreen">
+                    Go To Cart
+                </button>*@
+
+            @Html.TextBox("searchName", null, new { style = "height:36px; ", placeholder = "Search name..." })
+            <button type="submit" class="btn btn-primary" style="background-color:forestgreen;color:white;">
+                <i class="icofont icofont-search-2"></i>
+            </button>
+
+            <button formaction="@Url.Action("GetAllPurchasedFertilizers", "FarmerFertilizer")" class="btn btn-secondary" style="background-color:forestgreen; color:white; border:18px;">Purchase History</button>
+
+
+        }
+    </p>
+    <br />
+
+
+    <table class="table">
+        <thead></thead>
+        @{
+            int i = 5;
+            if (Model.Count() == 0)
+            {
+                @:<tr>
+                    @:<td colspan="3" style="color:forestgreen; text-align:center;">No data found.</td>
+                @:</tr>
+            }
+            else
+            {
+                foreach (var item in Model)
+                {
+                    if (i == 5 || i == 0)
+                    {
+                        @:<tr>
+                        }
+
+
+                        <td style="align-items:center">
+                            <img src="@("~/CropImages/" + item.Image)" asp-append-version="true" alt="" class="img-fluid"
+                                 style="width:200px; height:170px;"> <br />
+                            @Html.DisplayNameFor(model => model.FertilizerName) : @Html.DisplayFor(modelItem => item.FertilizerName) <br />
+                            @*@Html.DisplayNameFor(model => model.FertilizerPrice) : @Html.DisplayFor(modelItem => item.FertilizerPrice) <br />*@
+                            @*@Html.DisplayNameFor(model => model.FertilizerDesc) : @Html.DisplayFor(modelItem => item.FertilizerDesc) <br />
+                                @Html.ActionLink("Add To Cart", "GetFertilizerBasedOnID", "FarmerFertilizer", new { id = item.FertilizerId })*@
+
+                            <button type="button" class="btn btn-primary" style="background-color:white;color:forestgreen;border-color:white" data-toggle="ajax-modal"
+                                    data-target="#GetFertilizerBasedOnID" data-url="@Url.Action($"GetFertilizerBasedOnID/{item.FertilizerId}")">
+                                <i class="icofont-2x icofont-shopping-cart"></i>
+                            </button>
+                            <button type="button" class="btn btn-primary" style="background-color:white;color:forestgreen; border-color:white" data-toggle="ajax-modal"
+                                    data-target="#FertilizerDetails" data-url="@Url.Action($"FertilizerDetails/{item.FertilizerId}")">
+                                <i class="bx bx-detail"></i>
+                            </button>
+
+
+                        </td>
+                        i -= 1;
+
+                        if (i == 0)
+                        {
+                            i = 5;
+                        @:</tr>
+                    }
+                }
+            }
+        }
+
+
+    </table>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+﻿@using X.PagedList.Mvc.Core
+@using X.PagedList
+@model X.PagedList.IPagedList<KisaanSnehiWebApplication.Models.CropPurchaseModel>
+
+@{
+    ViewData["Title"] = "GetCropPurchaseHistory";
+    Layout = "~/Views/Shared/_SupplierLayout.cshtml";
+}
+
+
+<section id="DisplayCrops" class="d-flex flex-column justify-content-center align-items-center" style="margin-left:320px">
+    <h1>Crop Purchase History</h1>
+    <hr />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().FarmerName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().CropName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().PhoneNo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().CropPurchaseQuantity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().CropBillAmount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().CropPurchaseDate)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FarmerName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CropName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PhoneNo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CropPurchaseQuantity)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CropBillAmount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CropPurchaseDate)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @Html.PagedListPager((IPagedList)Model, page => Url.Action("GetCropPurchaseHistory", new { page }),
+        new X.PagedList.Web.Common.PagedListRenderOptionsBase
+        {
+            DisplayItemSliceAndTotal = true,
+            ContainerDivClasses = new[] { "navigation" },
+            LiElementClasses = new[] { "page-item" },
+            PageClasses = new[] { "page-link" }
+        }
+        )
+</section>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('ul.pagination > li.disabled > a').addClass('page-link');
+    });
+</script>
+

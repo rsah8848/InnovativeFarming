@@ -1,0 +1,140 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-KisaanSnehiWebApplication-584C53C9-EEBC-436A-B236-440E74EA316E</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DbImages\**" />
+    <Compile Remove="wwwroot\CSSNew\assets\img\clients\**" />
+    <Compile Remove="wwwroot\CSSNew\assets\img\testimonials\**" />
+    <Content Remove="DbImages\**" />
+    <Content Remove="wwwroot\CSSNew\assets\img\clients\**" />
+    <Content Remove="wwwroot\CSSNew\assets\img\testimonials\**" />
+    <EmbeddedResource Remove="DbImages\**" />
+    <EmbeddedResource Remove="wwwroot\CSSNew\assets\img\clients\**" />
+    <EmbeddedResource Remove="wwwroot\CSSNew\assets\img\testimonials\**" />
+    <None Remove="DbImages\**" />
+    <None Remove="wwwroot\CSSNew\assets\img\clients\**" />
+    <None Remove="wwwroot\CSSNew\assets\img\testimonials\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\CSSNew\assets\css\style.css" />
+    <None Include="wwwroot\CSSNew\assets\img\apple-touch-icon.png" />
+    <None Include="wwwroot\CSSNew\assets\img\cta-bg.jpg" />
+    <None Include="wwwroot\CSSNew\assets\img\favicon.png" />
+    <None Include="wwwroot\CSSNew\assets\img\hero-bg.jpg" />
+    <None Include="wwwroot\CSSNew\assets\img\portfolio\portfolio-1.jpg" />
+    <None Include="wwwroot\CSSNew\assets\img\portfolio\portfolio-2.jpg" />
+    <None Include="wwwroot\CSSNew\assets\img\portfolio\portfolio-3.jpg" />
+    <None Include="wwwroot\CSSNew\assets\img\portfolio\portfolio-4.jpg" />
+    <None Include="wwwroot\CSSNew\assets\img\portfolio\portfolio-5.jpg" />
+    <None Include="wwwroot\CSSNew\assets\img\portfolio\portfolio-6.jpg" />
+    <None Include="wwwroot\CSSNew\assets\img\portfolio\portfolio-7.jpg" />
+    <None Include="wwwroot\CSSNew\assets\img\portfolio\portfolio-8.jpg" />
+    <None Include="wwwroot\CSSNew\assets\img\portfolio\portfolio-9.jpg" />
+    <None Include="wwwroot\CSSNew\assets\img\portfolio\portfolio-details-1.jpg" />
+    <None Include="wwwroot\CSSNew\assets\img\portfolio\portfolio-details-2.jpg" />
+    <None Include="wwwroot\CSSNew\assets\img\portfolio\portfolio-details-3.jpg" />
+    <None Include="wwwroot\CSSNew\assets\js\main.js" />
+    <None Include="wwwroot\CSSNew\assets\vendor\aos\aos.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\aos\aos.js" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap-icons\bootstrap-icons.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff2" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap-icons\index.html" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-grid.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-grid.rtl.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-grid.rtl.css.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-utilities.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-utilities.css.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-utilities.min.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-utilities.min.css.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap.css.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap.min.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap.rtl.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap.rtl.css.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap.rtl.min.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\css\bootstrap.rtl.min.css.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\js\bootstrap.esm.js" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\js\bootstrap.esm.js.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\js\bootstrap.esm.min.js" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\js\bootstrap.esm.min.js.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\js\bootstrap.js" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\js\bootstrap.js.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\CSSNew\assets\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\CSSNew\assets\vendor\boxicons\css\animations.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\boxicons\css\boxicons.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\boxicons\css\boxicons.min.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\boxicons\css\transformations.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\boxicons\fonts\boxicons.eot" />
+    <None Include="wwwroot\CSSNew\assets\vendor\boxicons\fonts\boxicons.svg" />
+    <None Include="wwwroot\CSSNew\assets\vendor\boxicons\fonts\boxicons.ttf" />
+    <None Include="wwwroot\CSSNew\assets\vendor\boxicons\fonts\boxicons.woff" />
+    <None Include="wwwroot\CSSNew\assets\vendor\boxicons\fonts\boxicons.woff2" />
+    <None Include="wwwroot\CSSNew\assets\vendor\glightbox\css\glightbox.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\glightbox\css\glightbox.min.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\glightbox\js\glightbox.js" />
+    <None Include="wwwroot\CSSNew\assets\vendor\glightbox\js\glightbox.min.js" />
+    <None Include="wwwroot\CSSNew\assets\vendor\isotope-layout\isotope.pkgd.js" />
+    <None Include="wwwroot\CSSNew\assets\vendor\isotope-layout\isotope.pkgd.min.js" />
+    <None Include="wwwroot\CSSNew\assets\vendor\php-email-form\validate.js" />
+    <None Include="wwwroot\CSSNew\assets\vendor\purecounter\purecounter.js" />
+    <None Include="wwwroot\CSSNew\assets\vendor\remixicon\remixicon.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\remixicon\remixicon.eot" />
+    <None Include="wwwroot\CSSNew\assets\vendor\remixicon\remixicon.less" />
+    <None Include="wwwroot\CSSNew\assets\vendor\remixicon\remixicon.svg" />
+    <None Include="wwwroot\CSSNew\assets\vendor\remixicon\remixicon.symbol.svg" />
+    <None Include="wwwroot\CSSNew\assets\vendor\remixicon\remixicon.ttf" />
+    <None Include="wwwroot\CSSNew\assets\vendor\remixicon\remixicon.woff" />
+    <None Include="wwwroot\CSSNew\assets\vendor\remixicon\remixicon.woff2" />
+    <None Include="wwwroot\CSSNew\assets\vendor\swiper\swiper-bundle.min.css" />
+    <None Include="wwwroot\CSSNew\assets\vendor\swiper\swiper-bundle.min.js" />
+    <None Include="wwwroot\CSSNew\forms\contact.php" />
+    <None Include="wwwroot\CSSNew\forms\Readme.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="jQuery" Version="3.6.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.12" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="X.PagedList" Version="8.0.7" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="8.0.7" />
+    <PackageReference Include="X.PagedList.Web.Common" Version="8.0.7" />
+
+  </ItemGroup>
+
+</Project>

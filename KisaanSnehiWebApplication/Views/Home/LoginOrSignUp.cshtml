@@ -1,0 +1,231 @@
+﻿@model KisaanSnehiWebApplication.Models.RegistrationModel
+
+<head>
+    <link href="~/CSSNew/LoginStyleSheet.css" rel="stylesheet" />
+    <style>
+        h1 {
+            color: Green;
+        }
+
+        .cont_form_sign_up .scroll {
+            margin: 4px, 4px;
+            padding: 4px;
+            background-color: green;
+            width: 500px;
+            height: 110px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            text-align: justify;
+        }
+    </style>
+</head>
+<div class="cotn_principal">
+    <div class="cont_centrar">
+
+        <div class="cont_login">
+            <div class="cont_info_log_sign_up">
+                <div class="col_md_login">
+                    <h2>LOGIN</h2>
+                    <p>Login if you already have an account.</p>
+                    <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+                </div>
+                <div class="col_md_sign_up">
+                    <h2>SIGN UP</h2>
+                    <p>Please create an account if you don't have an account.</p>
+                    <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+                </div>
+            </div>
+
+
+            <div class="cont_back_info">
+                <div class="cont_img_back_grey">
+                    <img src="https://images.unsplash.com/photo-1563201515-adbe35c669c5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGFncmljdWx0dXJlfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80" alt="" />
+                </div>
+
+            </div>
+            <div class="cont_forms">
+                <div class="cont_img_back_">
+                    <img src="https://images.unsplash.com/photo-1563201515-adbe35c669c5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGFncmljdWx0dXJlfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80" alt="" />
+                </div>
+                <form asp-action="CheckLogin">
+                    <div class="cont_form_login">
+                        <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+                        <h2>LOGIN</h2>
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="EmailId" class="control-label"></label>
+                            <input asp-for="EmailId" type="email" class="form-control" />
+                            <span asp-validation-for="EmailId" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Password" class="control-label"></label>
+                            @*<label class="custom-control-label">should contain [A-z][a-z][*&%$#@@][8-12]</label>*@
+                            <input asp-for="Password" type="password" id="password" class="form-control" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        @*<input asp-for="Password" type="password" placeholder="Password" />*@
+                        <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+                        <a style="float: left" href="@Url.Action("ChangePassword","Home")">forgot password?</a>
+                    </div>
+                </form>
+
+
+                <form id="myForm" asp-action="AddRegistrationDetails">
+                    <div class="cont_form_sign_up scroll">
+
+                        <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+                        <h2>SIGN UP</h2>
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+
+                            @*<label asp-for="EmailId" class="control-label"></label>*@
+                            <input style="margin-top:10px" asp-for="EmailId" type="email" placeholder="enter your email id" class="form-control" />
+                            <span asp-validation-for="EmailId" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            @*<label asp-for="Name" class="control-label"></label>*@
+                            <input style="margin-top:10px" asp-for="Name" type="text" placeholder="enter your name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            @*<label asp-for="PhoneNo" class="control-label"></label>*@
+                            <input style="margin-top:10px" asp-for="PhoneNo" placeholder="enter your phone number" type="text" class="form-control" />
+                            <span asp-validation-for="PhoneNo" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            @*<label asp-for="Address" class="control-label"></label>*@
+                            <input style="margin-top:10px" asp-for="Address" type="text" placeholder="enter your address" class="form-control" />
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            @*<label asp-for="Password" class="control-label"></label>*@
+
+                            <input style="margin-top:10px" asp-for="Password" type="password" placeholder="enter password" id="password" class="form-control" />
+                            <label class="custom-control-label">should contain [A-z][a-z][*&%$#@@][8-12]</label>
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            @*<label asp-for="ConfirmPassword" class="control-label"></label>*@
+                            <input style="margin-top:10px" asp-for="ConfirmPassword" placeholder="confirm password" type="password" id="confirmPassword" class="form-control" />
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        </div>
+
+
+                        @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+                            <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+                            <script src="~/js/site.js" asp-append-version="true"></script>
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+                                $('#password, #confirmPassword').on('keyup', function () {
+                                    if ($('#password').val() == $('#confirmPassword').val()) {
+                                        $('#message').html('Matching').css('color', 'green');
+                                    } else
+                                        $('#message').html('Not Matching').css('color', 'red');
+                                });
+                            </script>*@
+
+                        <div class="form-group">
+                            @*<label class="control-label">choose city</label>*@
+                            <select style="margin-top: 10px; text-align: center; text-align-last: center;" asp-for="LocationId" class="form-control"
+                                    asp-items="@(new SelectList(@ViewBag.locations,"LocationId","City"))">
+                                <option style="text-align:center" value="none" selected disabled hidden>
+                                    select location
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            @*<label class="control-label">choose role</label>*@
+                            <select style=" margin-top: 10px; text-align: center;text-align-last: center;" asp-for="UserTypeId" class="form-control">
+                                <option style="text-align:center" value="none" selected disabled hidden>
+                                    Select role
+                                </option>
+                                <option value=1>Farmer</option>
+                                <option value=2>Supplier</option>
+                                <option value=3>Trader</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            @*<label class="control-label">security question</label>*@
+                            <select style="margin-top: 10px;text-align: center;text-align-last: center;" asp-for="SecurityQue" class="form-control">
+                                <option style="text-align:center" value="none" selected disabled hidden>
+                                    Select security question
+                                </option>
+                                <option value="My pet's Name">My pet's Name</option>
+                                <option value="My mother's Name">My mother's Name</option>
+                                <option value="My Birth place">My Birth place</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            @*<label asp-for="Answer" class="control-label"></label>*@
+                            <input style="margin-top:10px" asp-for="Answer" type="text" placeholder="Enter your answer here" class="form-control" />
+                            <span asp-validation-for="Answer" class="text-danger"></span>
+                        </div>
+
+                        <script>
+
+                        </script>
+
+                        <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+                    </div>
+
+                    <br /><br /><br />
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+    function cambiar_login() {
+        document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_login";
+        document.querySelector('.cont_form_login').style.display = "block";
+        document.querySelector('.cont_form_sign_up').style.opacity = "0";
+
+        setTimeout(function () { document.querySelector('.cont_form_login').style.opacity = "1"; }, 400);
+
+        setTimeout(function () {
+            document.querySelector('.cont_form_sign_up').style.display = "none";
+        }, 200);
+    }
+
+    function cambiar_sign_up(at) {
+
+        document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_sign_up";
+        document.querySelector('.cont_form_sign_up').style.display = "block";
+        document.querySelector('.cont_form_login').style.opacity = "0";
+
+        setTimeout(function () {
+            document.querySelector('.cont_form_sign_up').style.opacity = "1";
+        }, 100);
+
+        setTimeout(function () {
+            document.querySelector('.cont_form_login').style.display = "none";
+        }, 400);
+
+    }
+
+
+
+    function ocultar_login_sign_up() {
+
+        document.querySelector('.cont_forms').className = "cont_forms";
+        document.querySelector('.cont_form_sign_up').style.opacity = "0";
+        document.querySelector('.cont_form_login').style.opacity = "0";
+
+        setTimeout(function () {
+            document.querySelector('.cont_form_sign_up').style.display = "none";
+            document.querySelector('.cont_form_login').style.display = "none";
+        }, 500);
+
+    }
+
+
+
+
+</script>

@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "DeactivateAccount";
+}
+
+@{
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <script type="text/javascript">
+
+            window.onload = function () {
+                alert("Deactivation failed");
+                window.location.href = "SupplierProfile";
+            };
+        </script>
+
+    }
+}

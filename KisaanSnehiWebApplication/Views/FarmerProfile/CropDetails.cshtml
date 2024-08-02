@@ -1,0 +1,58 @@
+﻿@model KisaanSnehiWebApplication.Models.CropModel
+
+@{
+    ViewData["Title"] = "CropDetails";
+    Layout = "~/Views/Shared/_FarmerLayout.cshtml";
+}
+
+
+<div class="modal fade" id="CropDetails">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="CropDetails" style="padding-left:180px; color:forestgreen">Details</h4>
+                <button type="button" class="btn btn-close" data-dismiss="modal" style="background-color:forestgreen; color:white;">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <div>
+
+                    <img src="@("~/CropImages/" + Model.Image)" asp-append-version="true" alt="" class="img-fluid"
+                         style="width:200px; height:170px;"> <br />
+                    @Html.DisplayNameFor(model => model.CropName) : @Html.DisplayFor(modelItem => modelItem.CropName) <br />
+                    @Html.DisplayNameFor(model => model.CropPrice) : @Html.DisplayFor(modelItem => modelItem.CropPrice) <br />
+                    @Html.DisplayNameFor(model => model.CropDesc) : @Html.DisplayFor(modelItem => modelItem.CropDesc) <br />
+                    @Html.DisplayNameFor(model => model.CropQuantity) : @Html.DisplayFor(modelItem => modelItem.CropQuantity) <br />
+                    @Html.DisplayNameFor(model => model.CropQuantityInStock) : @Html.DisplayFor(modelItem => modelItem.CropQuantityInStock) <br />
+                </div>
+
+                    <br />
+
+                    <div class="form-group">
+                        
+                        <button type="button" class="btn btn-secondary close" data-dismiss="modal" style="background-color:forestgreen; color:white;">
+                            <span>Close</span>
+                        </button>
+
+                    </div>
+                
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+

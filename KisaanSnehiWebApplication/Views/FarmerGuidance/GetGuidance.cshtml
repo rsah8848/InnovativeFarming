@@ -1,0 +1,185 @@
+﻿@model KisaanSnehiWebApplication.Models.GuidanceModel
+
+@{
+    ViewData["Title"] = "GetGuidance";
+    Layout = "~/Views/Shared/_FarmerLayout.cshtml";
+}
+
+<html>
+<head>
+    <title>GET GUIDANCE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /** {
+                  box-sizing: border-box;
+              }*/
+
+        #bgContent {
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            border: 3px solid #000000;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            position: absolute;
+            margin-left: 120px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            /* width: 80%;
+        padding: 20px;
+        text-align: center;*/
+        }
+
+
+        #bgImage {
+            background-image: url("https://i.pinimg.com/originals/93/6c/75/936c75bda87f35a611221f4f74e64e18.png");
+            background-size: cover;
+            height: 100%;
+            z-index: 1;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: auto;
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+        }
+
+        body {
+            background-image: url("https://i.pinimg.com/originals/93/6c/75/936c75bda87f35a611221f4f74e64e18.png");
+            background-size: cover;
+            height: 100%;
+            z-index: 1;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: auto;
+            /*filter: blur(8px);
+            -webkit-filter: blur(8px);*/
+        }
+
+        #fromDdl {
+            width: auto;
+            margin-left: 150px;
+            float: left;
+            padding-top: 20px;
+        }
+
+        #toDdl {
+            width: auto;
+            margin-right: 150px;
+            float: right;
+            padding-top: 20px;
+        }
+
+
+
+        #main {
+            margin: auto;
+            margin-top: 150px;
+            width: auto;
+            border: 3px solid green;
+            padding: 50px;
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0, 0.4);
+            z-index: 9999;
+        }
+
+
+        #btnDiv {
+            align-self: center;
+            position: relative;
+            /*margin-left: 350px;*/
+            /*margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);*/
+        }
+
+        #btn {
+            background-color: white;
+            color: green;
+            border: 2px solid green;
+            margin-top: 70px;
+            margin-left: 250px;
+        }
+
+            #btn:hover {
+                background-color: green;
+                color: white;
+            }
+
+        #fromMonth {
+            background-color: wheat;
+        }
+
+        #element {
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <section id="GetAllPurchasedFertilizers" class="d-flex flex-column justify-content-center align-items-center" style="margin-left:320px">
+        <div id="bgImage"></div>
+        <div id="bgContent">
+            <form method="post" class="table">
+
+                <h1 style="text-align:center; color:#000000">GET GUIDANCE</h1>
+
+                @*<div id="main">*@
+                <div id="fromDdl">
+                    <select name="FromMonth" id="fromMonth">
+                        <option id="element" value="0" selected="selected">SELECT</option>
+                        <option id="element" value="1">JANUARY</option>
+                        <option id="element" value="2">FEBRUARY</option>
+                        <option id="element" value="3">MARCH</option>
+                        <option id="element" value="4">APRIL</option>
+                        <option id="element" value="5">MAY</option>
+                        <option id="element" value="6">JUNE</option>
+                        <option id="element" value="7">JULY</option>
+                        <option id="element" value="8">AUGUST</option>
+                        <option id="element" value="9">SEPTEMBER</option>
+                        <option id="element" value="10">OCTOBER</option>
+                        <option id="element" value="11">NOVEMBER</option>
+                        <option id="element" value="12">DECEMBER</option>
+                    </select>
+                </div>
+                <div id="toDdl">
+                    <select name="ToMonth" id="toMonth">
+                        <option id="element" value="0" selected="selected">SELECT</option>
+                        <option id="element" value="1">JANUARY</option>
+                        <option id="element" value="2">FEBRUARY</option>
+                        <option id="element" value="3">MARCH</option>
+                        <option id="element" value="4">APRIL</option>
+                        <option id="element" value="5">MAY</option>
+                        <option id="element" value="6">JUNE</option>
+                        <option id="element" value="7">JULY</option>
+                        <option id="element" value="8">AUGUST</option>
+                        <option id="element" value="9">SEPTEMBER</option>
+                        <option id="element" value="10">OCTOBER</option>
+                        <option id="element" value="11">NOVEMBER</option>
+                        <option id="element" value="12">DECEMBER</option>
+                    </select>
+                </div>
+                @*<div>
+                    <div id="btnDiv">*@
+                <button type="submit" value="SUBMIT" id="btn">GET CROPS</button>
+                @*</div>
+                    </div>*@
+                @*</div>*@
+
+            </form>
+        </div>
+    </section>
+</body>
+</html>
+
+

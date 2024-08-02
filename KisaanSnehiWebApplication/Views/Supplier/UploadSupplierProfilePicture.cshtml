@@ -1,0 +1,37 @@
+﻿@model KisaanSnehiWebApplication.Models.RegistrationModel
+
+@{
+    ViewData["Title"] = "UploadSupplierProfilePicture";
+    Layout = "~/Views/Shared/_SupplierLayout.cshtml";
+}
+
+<section class="d-flex flex-column justify-content-center align-items-center">
+    <h1>Upload Profile Picture</h1>
+
+
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="UploadSupplierProfilePicture" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="ImageFile" class="control-label"></label>
+                    <input asp-for="ImageFile" accept="image/*" id="ImageProfile" />
+                    <span asp-validation-for="ImageFile" class="text-danger"></span>
+                    <p>  </p>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Upload" class="btn btn-primary" style="background-color:forestgreen; color:white; border:18px;" />
+                    <p>  </p>
+                    <button formaction="@Url.Action("SupplierProfile", "Supplier")#Profile" class="btn btn-secondary" style="background-color:forestgreen; color:white; border:18px;">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    @*<div>
+        <a asp-action="Index">Back</a>
+    </div>*@
+</section>
+

@@ -1,0 +1,36 @@
+﻿@model KisaanSnehiWebApplication.Models.RegistrationModel
+
+@{
+    ViewData["Title"] = "RemoveSupplierProfilePicture";
+    Layout = "~/Views/Shared/_SupplierLayout.cshtml";
+}
+
+
+<section class="d-flex flex-column justify-content-center align-items-center">
+    
+    <h3>Are you sure you want to delete your profile picture?</h3>
+    <div>
+        <h4></h4>
+        <hr />
+        <dl class="row">
+
+            <dt class="col-sm-2" style="align-content:center">
+                @Html.DisplayFor(model => model.Name)
+            </dt>
+            <p>        </p>
+            <dd class="col-sm-10">
+                <img src="@("~/ImagesDB/"+Model.Image)" asp-append-version="true" alt="" class="img-fluid rounded-circle" width="200" height="200">
+            </dd>
+
+        </dl>
+
+        <form asp-action="RemoveSupplierProfilePicture">
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            <a asp-action="SupplierProfile">Cancel</a>
+        </form>
+    </div>
+</section>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back</a>
+</div>

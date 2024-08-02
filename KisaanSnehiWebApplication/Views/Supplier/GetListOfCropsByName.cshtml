@@ -1,0 +1,98 @@
+﻿@using X.PagedList.Mvc.Core
+@using X.PagedList
+@model X.PagedList.IPagedList<KisaanSnehiWebApplication.Models.CropModel>
+
+@{
+    ViewData["Title"] = "GetListOfCropsByName";
+    Layout = "~/Views/Shared/_SupplierLayout.cshtml";
+}
+
+
+<section id="DisplayCropsByName"class="d-flex flex-column justify-content-center align-items-center" style="margin-left:320px">
+    <h1>List Of Available Crops</h1>
+    <hr />
+
+    <p style="text-align:center">
+
+        <div id="PlaceHolderHere"></div>
+
+        @using (Html.BeginForm("GetListOfCropsByName", "Supplier", FormMethod.Get))
+        {
+            @Html.TextBox("cropName", null, new { style = "height:36px; ", placeholder = "search name" })
+            <button type="submit" class="btn btn-primary" style="background-color:forestgreen;color:white;">
+                <i class="icofont icofont-search-2"></i>
+            </button>
+        }
+    </p>
+    <br />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().CropId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().FarmerId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().CropName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().CropQuantity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().CropDesc)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().CropPrice)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CropId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FarmerId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CropName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CropQuantity)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CropDesc)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CropPrice)
+                    </td>
+
+                    <td>
+                        @Html.ActionLink("Add To Cart", "GetCropsBasedOnID", "Supplier", new { id = item.CropId })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    @Html.PagedListPager((IPagedList)Model, page => Url.Action("GetListOfCropsByName", new { page }),
+        new X.PagedList.Web.Common.PagedListRenderOptionsBase
+        {
+            DisplayItemSliceAndTotal = true,
+            ContainerDivClasses = new[] { "navigation" },
+            LiElementClasses = new[] { "page-item" },
+            PageClasses = new[] { "page-link" }
+        }
+        )
+</section>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('ul.pagination > li.disabled > a').addClass('page-link');
+    });
+</script>
+

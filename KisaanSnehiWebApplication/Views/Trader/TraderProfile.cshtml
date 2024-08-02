@@ -1,0 +1,113 @@
+﻿@model KisaanSnehiWebApplication.Models.RegistrationModel
+
+@{
+    ViewData["Title"] = "Profile";
+    Layout = "~/Views/Shared/_TraderLayout.cshtml";
+}
+@*<head>
+
+    <link href="~/CSSNew/assets/css/styleProfile.css" rel="stylesheet">
+</head>*@
+
+<section id="Profile" class="d-flex flex-column justify-content-center align-items-center" style="margin-left:320px">
+    <h1>TraderProfile</h1>
+    <div>
+        @Html.ActionLink("Edit Profile", "UpdateTraderProfile", new { Model = Model }) |
+        @Html.ActionLink("Change Password", "UpdateTraderPassword", new { Model = Model }) |
+        @Html.ActionLink("Change Profile Picture", "UploadProfilePicture", new { Model = Model }) |
+        @Html.ActionLink("Remove Profile Picture", "RemoveProfilePicture", new { Model = Model }) |
+        @Html.ActionLink("Deactivate Trader Account", "DeleteTraderProfile", new { id = Model.RegId })
+
+    </div>
+
+    <div>
+        @* <h4>RegistrationModel</h4>*@
+        <hr />
+        <dl class="row">
+            @*<dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.RegId)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.RegId)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.UserTypeId)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.UserTypeId)
+                </dd>*@
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.EmailId)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.EmailId)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.PhoneNo)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.PhoneNo)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Address)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Address)
+            </dd>
+            @*<dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.LocationId)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.LocationId)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Password)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Password)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.SecurityQue)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.SecurityQue)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Answer)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Answer)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Image)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Image)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.RegDate)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.RegDate)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.UpdatedDate)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.UpdatedDate)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.IsDeleted)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.IsDeleted)
+                </dd>*@
+        </dl>
+    </div>
+</section>

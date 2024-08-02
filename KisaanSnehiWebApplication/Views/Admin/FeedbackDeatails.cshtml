@@ -1,0 +1,58 @@
+﻿@model KisaanSnehiWebApplication.Models.FeedbackModel
+
+@{
+    ViewData["Title"] = "FeedbackDeatails";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="margin-left: 30%; margin-right: 2%;">
+    <h1>FeedbackDeatails</h1>
+
+    <div>
+         
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.FeedbackId)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.FeedbackId)
+            </dd>
+            <dt class="col-sm-2">
+                User email
+            </dt>
+            <dd class="col-sm-10">
+                @ViewData["userEmail"]
+            </dd>
+            <dt class="col-sm-2">
+                User type
+            </dt>
+            <dd class="col-sm-10">
+                @ViewData["userType"]
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.FeedbackDesc)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.FeedbackDesc)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Status)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Status)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.RegDate)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.RegDate)
+            </dd>
+           
+        </dl>
+    </div>
+    <div>
+        @Html.ActionLink("UpdateToResolved", "ResolveFeedback", new { id = Model.FeedbackId }) |
+        <a asp-action="GetFeedbacks">Back to List</a>
+    </div>
+</div>

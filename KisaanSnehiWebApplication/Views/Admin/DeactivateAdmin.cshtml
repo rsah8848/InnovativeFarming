@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "DeactivateAdmin";
+}
+
+@{
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <script type="text/javascript">
+
+            window.onload = function () {
+                alert("deactivation failed");
+                window.location.href = "GetAdminsList";
+            };
+        </script>
+
+    }
+}
+

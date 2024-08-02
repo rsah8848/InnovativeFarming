@@ -1,0 +1,51 @@
+﻿@model KisaanSnehiWebApplication.Models.RegistrationModel
+
+@{
+    ViewData["Title"] = "EditSupplierProfile";
+    Layout = "~/Views/Shared/_SupplierLayout.cshtml";
+}
+
+<section class="d-flex flex-column justify-content-center align-items-center">
+
+    <h1>Edit Supplier Profile</h1>
+    <hr />
+    <div class="row">
+        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form asp-action="EditSupplierProfile" class="php-email-form">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PhoneNo" class="control-label"></label>
+                    <input asp-for="PhoneNo" class="form-control" />
+                    <span asp-validation-for="PhoneNo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Address" class="control-label"></label>
+                    <input asp-for="Address" class="form-control" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">choose city</label>
+                    <select asp-for="LocationId" class="form-control"
+                            asp-items="@(new SelectList(@ViewBag.locations,"LocationId","City"))">
+                    </select>
+                </div>
+                <br />
+                <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-primary" style="background-color:forestgreen; color:white;" />
+                    <p></p>
+                    <button formaction="@Url.Action("SupplierProfile", "Supplier")#Profile" class="btn btn-secondary" style="background-color:forestgreen; color:white; border:18px;">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+

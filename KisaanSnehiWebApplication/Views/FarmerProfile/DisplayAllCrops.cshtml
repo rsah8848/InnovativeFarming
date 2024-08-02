@@ -1,0 +1,156 @@
+﻿@using X.PagedList.Mvc.Core
+@using X.PagedList
+
+@model X.PagedList.IPagedList<KisaanSnehiWebApplication.Models.CropModel>
+
+
+@{
+    ViewData["Title"] = "DisplayAllCrops";
+    Layout = "~/Views/Shared/_FarmerLayout.cshtml";
+
+}
+
+<head>
+    <script type="text/javascript">
+
+
+        $(function () {
+            var PlaceHolderElement = $('#PlaceHolderHere')
+            $('button[data-toggle="ajax-modal"]').click(function (event) {
+
+                var url = $(this).data('url');
+                var decodedUrl = decodeURIComponent(url);
+                $.get(decodedUrl).done(function (data) {
+                    PlaceHolderElement.html(data);
+                    PlaceHolderElement.find('.modal').modal('show');
+                })
+            })
+
+            PlaceHolderElement.on('click', '[data-dismiss="modal"]', function (event) {
+
+                PlaceHolderElement.find('.modal').modal('hide');
+
+            })
+
+        })
+
+    </script>
+
+</head>
+
+<section id="DisplayCrops" class="d-flex flex-column justify-content-center align-items-center" style="margin-left:320px ">
+    <p style="text-align:center">
+
+        <div id="PlaceHolderHere"></div>
+        @*<header>
+                <h1 style="text-align:center; color:darkgreen">MY CROPS</h1><br />
+            </header>*@
+
+        @using (Html.BeginForm("DisplayAllCrops", "FarmerProfile", FormMethod.Get))
+        {
+            <button type="button" class="btn btn-primary" data-toggle="ajax-modal"
+                    data-target="#AddCrop" data-url="@Url.Action($"AddCrop")" style="background-color:forestgreen">
+                Add Crop
+            </button>
+            @Html.TextBox("searchName", null, new { style = "height:36px; ", placeholder = "Search name..." })
+            <button type="submit" class="btn btn-primary" style="background-color:forestgreen;color:white;">
+                <i class="icofont icofont-search-2"></i>
+            </button>
+            <button onclick="location.href='@Url.Action("GetPurchasedCrops", "FarmerProfile")';return false;" class="btn btn-primary"
+                    style="background-color:forestgreen; color:white;">
+                Selling History
+            </button>
+            @*@Html.PagedListPager((IPagedList)Model, page => Url.Action("DisplayAllCrops", new { page }),
+     new X.PagedList.Web.Common.PagedListRenderOptionsBase
+     {
+         DisplayItemSliceAndTotal = true,
+         ContainerDivClasses = new[] { "navigation" },
+         LiElementClasses = new[] { "page-item" },
+         PageClasses = new[] { "page-link" }
+     }
+     )*@
+
+        }
+    </p>
+    <br />
+
+
+    <table class="table">
+        <thead></thead>
+        @{
+            int i = 5;
+            if (Model.Count() == 0)
+            {
+                @:<tr>
+                    @:<td colspan="3" style="color:forestgreen; text-align:center;">No data found.</td>
+                @:</tr>
+            }
+            else
+            {
+                foreach (var item in Model)
+                {
+                    if (i == 5 || i == 0)
+                    {
+                        @:<tr>
+                        }
+
+
+                        <td style="align-items:center">
+                            <img src="@("~/CropImages/" + item.Image)" asp-append-version="true" alt="" class="img-fluid"
+                                 style="width:200px; height:170px;"> <br />
+                            @Html.Label("Crop Name :",null, new { @style= "font-weight:bold;" }) @Html.DisplayFor(modelItem => item.CropName) <br />
+                            @Html.Label("Price (per kg) :", null, new { @style = "font-weight:bold;" }) Rs. @Html.DisplayFor(modelItem => item.CropPrice) <br />
+                           
+
+                            <button type="button" class="btn btn-primary" style="background-color:white;color:forestgreen;border-color:white" data-toggle="ajax-modal"
+                                    data-target="#EditCrop" data-url="@Url.Action($"EditCrop/{item.CropId}")">
+                                <i class="icofont-ui-edit"></i>
+                            </button>
+                            <button type="button" class="btn btn-primary" style="background-color:white;color:forestgreen; border-color:white" data-toggle="ajax-modal"
+                                    data-target="#CropDetails" data-url="@Url.Action($"CropDetails/{item.CropId}")">
+                                <i class="bx bx-detail"></i>
+                            </button>
+                            <button type="button" class="btn btn-primary" style="background-color:white;color:forestgreen; border-color:white" data-toggle="ajax-modal"
+                                    data-target="#DeleteCrop" data-url="@Url.Action($"DeleteCrop/{item.CropId}")">
+                                <i class="icofont-delete-alt"></i>
+                            </button>
+
+
+                        </td>
+                        i -= 1;
+
+                        if (i == 0)
+                        {
+                            i = 5;
+                        @:</tr>
+                    }
+                }
+
+
+            }
+        }
+
+
+    </table>
+
+    @Html.PagedListPager((IPagedList)Model, page => Url.Action("DisplayAllCrops", new { page }),
+        new X.PagedList.Web.Common.PagedListRenderOptionsBase
+        {
+            DisplayItemSliceAndTotal = true,
+            ContainerDivClasses = new[] { "navigation" },
+            LiElementClasses = new[] { "page-item" },
+            PageClasses = new[] { "page-link" }
+        }
+        )
+
+</section>
+
+
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('ul.pagination > li.disabled > a').addClass('page-link');
+    });
+</script>

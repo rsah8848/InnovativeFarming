@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Plant Prediction";
+    Layout = "~/Views/Shared/_FarmerLayout.cshtml";
+}
+
+<style>
+    .detection-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Upload button styles */
+    .upload {
+        margin-top: 20px;
+        background-color: #28a745;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .upload:hover {
+            background-color: #2fdb55;
+            transform: scale(1.01);
+            transition: 0.4s ease-in-out;
+        }
+</style>
+
+@if (ViewBag.Message != null)
+{
+    <script type="text/javascript">
+        window.onload = function () {
+            alert("@ViewBag.Message");
+        };
+    </script>
+}
+
+<div class="detection-container">
+    <h3>Tomato Disease Detection System</h3>
+    <form method="post" enctype="multipart/form-data" asp-action="PlantPrediction">
+        <span>Choose Image File</span>
+        <label for="myfile">Select an image</label>
+        <input type="file" id="myfile" name="myfile">
+        <button class="form-control btn upload">Upload</button>
+    </form>
+</div>

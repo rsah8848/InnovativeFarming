@@ -1,0 +1,82 @@
+﻿@model KisaanSnehiWebApplication.Models.FertilizerModel
+
+@{
+    ViewData["Title"] = "AddFertilizer";
+    Layout = "~/Views/Shared/_TraderLayout.cshtml";
+}
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <script type="text/javascript">
+
+            window.onload = function () {
+                alert("@ViewBag.ErrorMessage");
+                window.location.href = "GetAllFertilizers";
+            };
+    </script>
+
+}
+
+<div class="modal fade" id="AddFertilizer">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="AddFertilizer" style="padding-left:180px; color:forestgreen">Add Fertilizer</h4>
+                 <button type="button" class="btn btn-close" data-dismiss="modal" style="background-color:forestgreen; color:white;">
+                 </button>
+            </div>
+
+            <div class="modal-body">
+
+                <form asp-action="AddFertilizer" enctype="multipart/form-data" onsubmit="return validateForm()">
+
+
+            <div class="form-group">
+                <label asp-for="FertilizerName" class="control-label"></label>
+                <input asp-for="FertilizerName" class="form-control" />
+                <span asp-validation-for="FertilizerName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FertilizerQuantity" class="control-label"></label>
+                <input asp-for="FertilizerQuantity" class="form-control" />
+                <span asp-validation-for="FertilizerQuantity" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="FertilizerDesc" class="control-label"></label>
+                <input asp-for="FertilizerDesc" class="form-control" />
+                <span asp-validation-for="FertilizerDesc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FertilizerPrice" class="control-label"></label>
+                <input asp-for="FertilizerPrice" class="form-control" />
+                <span asp-validation-for="FertilizerPrice" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <label asp-for="ImageFile" class="control-label"></label>
+                <input asp-for="ImageFile" accept="image/*" id="ImageFile" class="form-control" />
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+
+            <br />
+
+            <div class="form-group">
+                        <li>
+                            <input type="submit" value="Save" class="btn btn-primary" style="background-color:forestgreen; color:white;" />
+                            |
+                            <button type="button" class="btn btn-secondary close" data-dismiss="modal" style="background-color:forestgreen; color:white;">
+                        <span>Close</span>
+                        </button>
+                        </div>
+            </form>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+</div>
+

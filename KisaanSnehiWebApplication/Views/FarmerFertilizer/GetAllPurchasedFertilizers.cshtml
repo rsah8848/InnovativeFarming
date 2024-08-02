@@ -1,0 +1,73 @@
+﻿@model IEnumerable<KisaanSnehiWebApplication.Models.FertilizerPurchaseModel>
+
+@{
+    ViewData["Title"] = "GetAllPurchasedFertilizers";
+    Layout = "~/Views/Shared/_FarmerLayout.cshtml";
+}
+
+<section id="GetAllPurchasedFertilizers" class="d-flex flex-column justify-content-center align-items-center" style="margin-left:320px">
+    <h1>Fertilizer Purchase History</h1>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                @*<th>
+                        @Html.DisplayNameFor(model => model.FertilizerPurchaseId)
+                    </th>*@
+                <th>
+                    @Html.DisplayNameFor(model => model.FarmerId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TraderId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FertilizerId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FertilizerPurchaseQuantity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FertilizerBillAmount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FertilizerPurchaseDate)
+                </th>
+                @*<th></th>*@
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.FertilizerPurchaseId)
+                        </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FarmerId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TraderId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FertilizerId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FertilizerPurchaseQuantity)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FertilizerBillAmount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FertilizerPurchaseDate)
+                    </td>
+                    @*<td>
+                            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                        </td>*@
+                </tr>
+            }
+        </tbody>
+    </table>
+</section>

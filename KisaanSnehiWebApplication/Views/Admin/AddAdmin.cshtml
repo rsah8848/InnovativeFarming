@@ -1,0 +1,167 @@
+﻿@model KisaanSnehiWebApplication.Models.RegistrationModel
+
+@{
+    ViewData["Title"] = "AddAdmin";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<style>
+</style>
+@if (ViewBag.ErrorMessage != null)
+{
+    <script type="text/javascript">
+
+            window.onload = function () {
+                alert("@ViewBag.ErrorMessage");
+                window.location.href = "GetAdminsList";
+            };
+    </script>
+
+}
+<div style="margin-left:30%;margin-top:5%">
+    <h1>AddAdmin</h1>
+    <hr />
+    <div class="row col-sm-8">
+        <form asp-action="AddAdmin">
+            <dl class="row">
+                <dt class="col-sm-6">
+                    <label asp-for="Name" class="control-label"> </label>
+                </dt>
+                <dd class="col-sm-6">
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </dd>
+                <dt class="col-sm-6">
+                    <label asp-for="EmailId" class="control-label"></label>
+                </dt>
+                <dd class="col-sm-6">
+                    <input asp-for="EmailId" class="form-control" />
+                    <span asp-validation-for="EmailId" class="text-danger"></span>
+                </dd>
+                <dt class="col-sm-6">
+                    <label asp-for="PhoneNo" class="control-label"></label>
+                </dt>
+                <dd class="col-sm-6">
+                    <input asp-for="PhoneNo" class="form-control" />
+                    <span asp-validation-for="PhoneNo" class="text-danger"></span>
+                </dd>
+                <dt class="col-sm-6">
+                    <label asp-for="Address" class="control-label"></label>
+                </dt>
+                <dd class="col-sm-6">
+                    <input asp-for="Address" class="form-control" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </dd>
+                <dt class="col-sm-6">
+                    <label class="control-label">location</label>
+                </dt>
+                <dd class="col-sm-6">
+                    <select asp-for="LocationId" class="form-control"
+                            asp-items="@(new SelectList(@ViewBag.locations,"LocationId","City"))">
+                    </select>
+                    <span asp-validation-for="LocationId" class="text-danger"></span>
+                </dd>
+
+
+                <dt class="col-sm-6">
+                    <label asp-for="Password" class="control-label"></label>
+                </dt>
+                <dd class="col-sm-6">
+                    <input asp-for="Password" class="form-control" value="Password1*" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </dd>
+                <dt class="col-sm-6">
+                    <label asp-for="ConfirmPassword" class="control-label"></label>
+                </dt>
+                <dd class="col-sm-6">
+
+                    <input type="password" asp-for="ConfirmPassword" class="form-control" value="Password1*" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </dd>
+                <dt class="col-sm-6">
+                    <label asp-for="SecurityQue" class="control-label"></label>
+                </dt>
+                <dd class="col-sm-6">
+
+                    <select asp-for="SecurityQue" class="form-control">
+                        <option value="none" selected disabled hidden>
+                            select one option
+                        </option>
+                        <option value="My pet's Name">My pet's Name</option>
+                        <option value="My mother's Name">My mother's Name</option>
+                        <option value="My Birth place">My Birth place</option>
+                    </select>
+                    <span asp-validation-for="SecurityQue" class="text-danger"></span>
+                </dd>
+
+
+                <dt class="col-sm-6">
+                    <label asp-for="Answer" class="control-label"></label>
+                </dt>
+                <dd class="col-sm-6">
+
+                    <input asp-for="Answer" class="form-control" />
+                    <span asp-validation-for="Answer" class="text-danger"></span>
+                </dd>
+                <dd>
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </dd>
+            </dl>
+
+            @*<div style="display:inline" class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="EmailId" class="control-label"></label>
+                    <input asp-for="EmailId" class="form-control" />
+                    <span asp-validation-for="EmailId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PhoneNo" class="control-label"></label>
+                    <input asp-for="PhoneNo" class="form-control" />
+                    <span asp-validation-for="PhoneNo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Address" class="control-label"></label>
+                    <input asp-for="Address" class="form-control" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+
+                </div>
+                <div class="form-group">
+
+                </div>
+                <div class="form-group">
+                    <label asp-for="ConfirmPassword" class="control-label"></label>
+                    <input type="password" asp-for="ConfirmPassword" class="form-control" value="Password1*" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SecurityQue" class="control-label"></label>
+                    <select asp-for="SecurityQue" class="form-control">
+                        <option value="My pet's Name">My pet's Name</option>
+                        <option value="My mother's Name">My mother's Name</option>
+                        <option value="My Birth place">My Birth place</option>
+                    </select>
+                    <span asp-validation-for="SecurityQue" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Answer" class="control-label"></label>
+                    <input asp-for="Answer" class="form-control" />
+                    <span asp-validation-for="Answer" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>*@
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+ 
+

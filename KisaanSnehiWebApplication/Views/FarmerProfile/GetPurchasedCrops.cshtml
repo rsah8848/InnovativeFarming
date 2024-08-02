@@ -1,0 +1,141 @@
+﻿@using X.PagedList.Mvc.Core
+@using X.PagedList
+
+
+@model X.PagedList.IPagedList<KisaanSnehiWebApplication.Models.CropPurchaseModel>
+
+@{
+    ViewData["Title"] = "GetPurchasedCrops";
+    Layout = "~/Views/Shared/_FarmerLayout.cshtml";
+}
+
+<head>
+    <script>
+        $(document).ready(function () {
+            
+
+
+            $(".datepicker").datepicker({
+                dateFormat: "dd-mm-yy",
+                changemonth: true,
+                changeyear: true
+            });
+        });
+    </script>
+</head>
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<section id="GetPurchasedCrops" class="d-flex flex-column justify-content-center align-items-center" style="margin-left:330px;margin-right:30px;">
+    <div style="margin-right:90%">
+        <a asp-action="DisplayAllCrops" style="align-items:flex-start"><i class='fas fa-arrow-alt-circle-left' style='font-size:30px;'></i></a>
+    </div>
+    <h1>Sold Crops Details</h1>
+    <hr />
+
+    <div id="PlaceHolderHere"></div>
+
+    @using (Html.BeginForm("GetPurchasedCrops", "FarmerProfile", FormMethod.Get))
+    {
+        <label>From : </label>
+        <input type="date" id="date" name="date" placeholder="from date" style="height:36px; " />
+        <label>     To : </label>
+        <input type="date" id="todate" name="todate" placeholder="to date" style="height:36px; " />
+
+        @Html.TextBox("searchName", null, new { style = "height:36px; ", placeholder = "Supplier name..." })
+        <button type="submit" class="btn btn-primary" style="background-color:forestgreen;color:white;">
+            <i class="icofont icofont-search-2"></i>
+        </button>
+
+
+
+    }
+
+    <br />
+
+
+    @if (Model.Count() == 0)
+    {
+        @:<div>
+            @:<p colspan="3" style="color:forestgreen; text-align:center;">No data found.</p>
+        @:</div>
+    }
+    else
+    {
+
+        <table class="table">
+
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().CropName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().SupplierName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().PhoneNo)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().CropPurchaseQuantity)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().CropBillAmount)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.First().CropPurchaseDate)
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CropName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SupplierName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PhoneNo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CropPurchaseQuantity)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CropBillAmount)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DateOfPurchase)
+
+
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+
+
+        </table>
+
+
+        @Html.PagedListPager((IPagedList)Model, page => Url.Action("DisplayAllCrops", new { page }),
+                 new X.PagedList.Web.Common.PagedListRenderOptionsBase
+                 {
+                     DisplayItemSliceAndTotal = true,
+                     ContainerDivClasses = new[] { "navigation" },
+                     LiElementClasses = new[] { "page-item" },
+                     PageClasses = new[] { "page-link" }
+                 }
+                 )
+
+    }
+</section>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('ul.pagination > li.disabled > a').addClass('page-link');
+    });
+</script>

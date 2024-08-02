@@ -1,0 +1,52 @@
+﻿@model KisaanSnehiWebApplication.Models.CropPurchaseModel
+
+@{
+    ViewData["Title"] = "AddCropToCart";
+    Layout = "~/Views/Shared/_SupplierLayout.cshtml";
+}
+
+<section id="AddFertilizerToCart" class="d-flex flex-column justify-content-center align-items-center" style="margin-left:320px">
+    <h1>Add Crop To Cart</h1>
+
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="AddCropToCart">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                @*<div class="form-group">
+                    <label asp-for="CropPurchaseId" class="control-label"></label>
+                    <input asp-for="CropPurchaseId" class="form-control" />
+                    <span asp-validation-for="CropPurchaseId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FarmerId" class="control-label"></label>
+                    <input asp-for="FarmerId" class="form-control" />
+                    <span asp-validation-for="FarmerId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CropId" class="control-label"></label>
+                    <input asp-for="CropId" class="form-control" />
+                    <span asp-validation-for="CropId" class="text-danger"></span>
+                </div>*@
+                <div class="form-group">
+                    <label asp-for="CropPurchaseQuantity" class="control-label"></label>
+                    <input asp-for="CropPurchaseQuantity" class="form-control" />
+                    <span asp-validation-for="CropPurchaseQuantity" class="text-danger"></span>
+                </div>
+                <p>  </p>
+                <div class="form-group">
+                    <input type="submit" value="Add" class="btn btn-primary" style="background-color:forestgreen; color:white; border:18px;" />
+                    <p>  </p>
+                    <button formaction="@Url.Action("SupplierProfile", "Supplier")#Profile" class="btn btn-secondary" style="background-color:forestgreen; color:white; border:18px;">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @*<div>
+        <a asp-action="Index">Back</a>
+    </div>*@
+</section>
+
+    
+

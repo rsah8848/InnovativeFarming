@@ -1,0 +1,166 @@
+﻿@model KisaanSnehiWebApplication.Models.CropModel
+
+@{
+    ViewData["Title"] = "EditCrop";
+    Layout = "~/Views/Shared/_FarmerLayout.cshtml";
+}
+
+
+
+
+<div class="modal fade" id="EditCrop">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="EditCrop" style="padding-left:180px; color:forestgreen">Edit Crop</h4>
+                <button type="button" class="btn btn-close" data-dismiss="modal" style="background-color:forestgreen; color:white;">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <form asp-action="EditCrop" enctype="multipart/form-data">
+
+
+                    <div class="form-group">
+                        <label asp-for="CropName" class="control-label"></label>
+                        <input asp-for="CropName" class="form-control" />
+                        <span asp-validation-for="CropName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CropQuantity" class="control-label"></label>
+                        <input asp-for="CropQuantity" class="form-control" />
+                        <span asp-validation-for="CropQuantity" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CropPrice" class="control-label"></label>
+                        <input asp-for="CropPrice" class="form-control" />
+                        <span asp-validation-for="CropPrice" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="ImageFile" class="control-label"></label>
+                        <input asp-for="ImageFile" accept="image/*" id="ImageFile" class="form-control" />
+                        <span asp-validation-for="ImageFile" class="text-danger"></span>
+                        <p>  </p>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="CropDesc" class="control-label"></label>
+                        <input asp-for="CropDesc" class="form-control" />
+                        <span asp-validation-for="CropDesc" class="text-danger"></span>
+                    </div>
+
+                    <br />
+
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" style="background-color:forestgreen; color:white;" />
+                        <button type="button" class="btn btn-secondary close" data-dismiss="modal" style="background-color:forestgreen; color:white;">
+                            <span>Close</span>
+                        </button>
+
+                    </div>
+                </form>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<section style="margin-left:320px; align-items:center;">
+    <h1>Edit Crop</h1>
+
+
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="EditCrop" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="CropId" class="control-label"></label>
+                    <input asp-for="CropId" class="form-control" />
+                    <span asp-validation-for="CropId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FarmerId" class="control-label"></label>
+                    <input asp-for="FarmerId" class="form-control" />
+                    <span asp-validation-for="FarmerId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CropName" class="control-label"></label>
+                    <input asp-for="CropName" class="form-control" />
+                    <span asp-validation-for="CropName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CropQuantity" class="control-label"></label>
+                    <input asp-for="CropQuantity" class="form-control" />
+                    <span asp-validation-for="CropQuantity" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CropQuantityInStock" class="control-label"></label>
+                    <input asp-for="CropQuantityInStock" class="form-control" />
+                    <span asp-validation-for="CropQuantityInStock" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="CropPrice" class="control-label"></label>
+                    <input asp-for="CropPrice" class="form-control" />
+                    <span asp-validation-for="CropPrice" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="ImageFile" class="control-label"></label>
+                    <input asp-for="ImageFile" accept="image/*" id="ImageFile" />
+                    <span asp-validation-for="ImageFile" class="text-danger"></span>
+                    <p>  </p>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CropDesc" class="control-label"></label>
+                    <input asp-for="CropDesc" class="form-control" />
+                    <span asp-validation-for="CropDesc" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Image" class="control-label"></label>
+                    <input asp-for="Image" class="form-control" />
+                    <span asp-validation-for="Image" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+</section>*@

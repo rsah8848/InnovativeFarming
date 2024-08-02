@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <script type="text/javascript">
+
+            window.onload = function () {
+                alert("Invalid User name or password");
+                window.location.href = "LoginOrSignUp";
+            };
+        </script>
+
+    }
+}

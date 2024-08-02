@@ -1,0 +1,65 @@
+﻿@model KisaanSnehiWebApplication.Models.RegistrationModel
+
+@{
+    ViewData["Title"] = "UpdateTraderProfile";
+Layout = "~/Views/Shared/_TraderLayout.cshtml";
+}
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <script type="text/javascript">
+
+            window.onload = function () {
+                alert("@ViewBag.ErrorMessage");
+                window.location.href = "TraderProfile";
+            };
+    </script>
+
+}
+
+<section id="Edit" class="d-flex flex-column justify-content-center align-items-center">
+    <h1>Edit Profile</h1>
+
+<hr />
+<div class="row">
+    <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+        <form asp-action="UpdateTraderProfile" class="php-email-form">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" style="width:200px;" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="PhoneNo" class="control-label"></label>
+                <input asp-for="PhoneNo" class="form-control" style="width:200px;" />
+                <span asp-validation-for="PhoneNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" style="width:400px;" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">choose city</label>
+                <select asp-for="LocationId" class="form-control"
+                        asp-items="@(new SelectList(@ViewBag.locations,"LocationId","City"))" style="width:200px;" >
+                </select>
+            </div>
+
+            <br /> <br />
+            
+            <div class="form-group">
+                <input type="submit" value="Update" class="btn btn-primary" />
+                <button formaction="@Url.Action("TraderProfile", "Trader")#Profile" class="btn btn-secondary" style="background-color:forestgreen; color:white; border:18px;">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+</section>
+

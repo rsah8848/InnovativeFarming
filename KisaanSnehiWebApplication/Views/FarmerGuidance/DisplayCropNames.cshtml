@@ -1,0 +1,76 @@
+﻿@model IEnumerable<KisaanSnehiWebApplication.Models.GuidanceModel>
+
+@{
+    ViewData["Title"] = "DisplayCropNames";
+    Layout = "~/Views/Shared/_FarmerLayout.cshtml";
+}
+
+<section id="GetListOfFertilizers" class="d-flex flex-column justify-content-center align-items-center" style="margin-left:320px">
+    <p style="text-align:center">
+
+        <div id="PlaceHolderHere"></div>
+
+
+        @using (Html.BeginForm("DisplayCropNames", "FarmerGuidance", FormMethod.Get))
+        {
+            <!--<button type="button" class="btn btn-primary" style="background-color:white;color:forestgreen; border-color:white" href="/9@Url.Action("DisplayCartContents","FarmerFertilizer")">-->
+            @*"@Url.Action("DisplayCartContents", "FarmerFertilizer")"*@
+            <!--<i class="icofont-2x icofont-shopping-cart"></i>
+            </button>-->
+            @*@Html.ActionLink("GO TO CART", "DisplayCartContents", "FarmerFertilizer", new { @class = "icofont-2x icofont-shopping-cart" })*@
+
+            @*@Html.TextBox("searchName", null, new { style = "height:36px; ", placeholder = "Search name..." })
+                <button type="submit" class="btn btn-primary" style="background-color:forestgreen;color:white;">
+                    <i class="icofont icofont-search-2"></i>
+                </button>*@
+        }
+    </p>
+    <br />
+
+
+    <table class="table">
+        <thead></thead>
+        @{
+            int i = 5;
+            if (Model.Count() == 0)
+            {
+                @:<tr>
+                    @:<td colspan="3" style="color:forestgreen; text-align:center;">No data found.</td>
+                @:</tr>
+            }
+            else
+            {
+                foreach (var item in Model)
+                {
+                    if (i == 5 || i == 0)
+                    {
+                        @:<tr>
+                        }
+
+
+                        <td style="align-items:center">
+                            <img src="@("~/CropImages/" + item.Image)" asp-append-version="true" alt="" class="img-fluid"
+                                 style="width:200px; height:170px;"> <br />
+                            @Html.DisplayNameFor(model => model.CropName) : @Html.DisplayFor(modelItem => item.CropName) <br />
+                            @Html.DisplayNameFor(model => model.CropDesc) : @Html.DisplayFor(modelItem => item.CropDesc) <br />
+                            @*@Html.DisplayNameFor(model => model.FertilizerDesc) : @Html.DisplayFor(modelItem => item.FertilizerDesc) <br />
+                                @Html.ActionLink("Add To Cart", "GetFertilizerBasedOnID", "FarmerFertilizer", new { id = item.FertilizerId })*@
+
+                        </td>
+                        i -= 1;
+
+                        if (i == 0)
+                        {
+                            i = 5;
+                        @:</tr>
+                    }
+                }
+            }
+        }
+
+
+    </table>
+
+
+
+</section>

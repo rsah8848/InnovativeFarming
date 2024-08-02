@@ -1,0 +1,128 @@
+﻿@model KisaanSnehiWebApplication.Models.FertilizerPurchaseModel
+
+@{
+    ViewData["Title"] = "AddFertilizerToCart";
+    Layout = "~/Views/Shared/_FarmerLayout.cshtml";
+}
+
+
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <script type="text/javascript">
+
+            window.onload = function () {
+                alert("@ViewBag.ErrorMessage");
+                window.location.href = "AddFertilizerToCart";
+            };
+    </script>
+
+}
+
+
+<div class="modal fade" id="AddFertilizerToCart">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="AddFertilizerToCart" style="padding-left:180px; color:forestgreen">Add Fertilizer</h4>
+                <button type="button" class="btn btn-close" data-dismiss="modal" style="background-color:forestgreen; color:white;">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <form asp-action="AddFertilizerToCart" enctype="multipart/form-data">
+
+
+                    <div class="form-group">
+                        <label asp-for="FertilizerPurchaseQuantity" class="control-label"></label>
+                        <input asp-for="FertilizerPurchaseQuantity" class="form-control" />
+                        <span asp-validation-for="FertilizerPurchaseQuantity" class="text-danger"></span>
+                    </div>
+
+                    <br />
+
+                    <div class="form-group">
+
+                        <input type="submit" value="Add To Cart" class="btn btn-primary" style="background-color:forestgreen; color:white;" />
+                        <button type="button" class="btn btn-secondary close" data-dismiss="modal" style="background-color:forestgreen; color:white;">
+                            <span>Close</span>
+                        </button>
+
+
+                        @*<input type="submit" value="Add" class="btn btn-primary" />*@
+
+                    </div>
+                </form>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+<!--<section id="AddFertilizerToCart" class="d-flex flex-column justify-content-center align-items-center" style="margin-left:320px">-->
+@*<p style="text-align:center">*@
+
+
+
+<!--<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddFertilizerToCart">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>-->
+@*<div class="form-group">
+        <label asp-for="FertilizerPurchaseId" class="control-label"></label>
+        <input asp-for="FertilizerPurchaseId" class="form-control" />
+        <span asp-validation-for="FertilizerPurchaseId" class="text-danger"></span>
+    </div>*@
+@*<div class="form-group">
+        <label asp-for="FarmerId" class="control-label"></label>
+        <input asp-for="FarmerId" class="form-control" />
+        <span asp-validation-for="FarmerId" class="text-danger"></span>
+    </div>*@
+@*<div class="form-group">
+        <label asp-for="TraderId" class="control-label"></label>
+        <input asp-for="TraderId" class="form-control" />
+        <span asp-validation-for="TraderId" class="text-danger"></span>
+    </div>*@
+@*<div class="form-group">
+        <label asp-for="FertilizerId" class="control-label"></label>
+        <input asp-for="FertilizerId" class="form-control" />
+        <span asp-validation-for="FertilizerId" class="text-danger"></span>
+    </div>*@
+<!--<div class="form-group">
+    <label asp-for="FertilizerPurchaseQuantity" class="control-label"></label>
+    <input asp-for="FertilizerPurchaseQuantity" class="form-control" />
+    <span asp-validation-for="FertilizerPurchaseQuantity" class="text-danger"></span>
+</div>-->
+@*<div class="form-group">
+        <label asp-for="FertilizerBillAmount" class="control-label"></label>
+        <input asp-for="FertilizerBillAmount" class="form-control" />
+        <span asp-validation-for="FertilizerBillAmount" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="FertilizerPurchaseDate" class="control-label"></label>
+        <input asp-for="FertilizerPurchaseDate" class="form-control" />
+        <span asp-validation-for="FertilizerPurchaseDate" class="text-danger"></span>
+    </div>*@
+<!--<div class="form-group">
+                <input type="submit" value="ADD" class="btn btn-primary" style="background-color:forestgreen" />
+            </div>
+        </form>
+    </div>
+</div>-->
+@*<div>
+        <a asp-action="Index">Back to List</a>
+    </div>*@
+
+<!--</section>-->

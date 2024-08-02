@@ -1,0 +1,13 @@
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.CustomExceptions\bin\Debug\netcoreapp3.1\InnovativeFarming.CustomExceptions.deps.json
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.CustomExceptions\bin\Debug\netcoreapp3.1\InnovativeFarming.CustomExceptions.runtimeconfig.json
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.CustomExceptions\bin\Debug\netcoreapp3.1\InnovativeFarming.CustomExceptions.runtimeconfig.dev.json
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.CustomExceptions\bin\Debug\netcoreapp3.1\InnovativeFarming.CustomExceptions.dll
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.CustomExceptions\bin\Debug\netcoreapp3.1\InnovativeFarming.CustomExceptions.pdb
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.CustomExceptions\obj\Debug\netcoreapp3.1\InnovativeFarming.CustomExceptions.csproj.AssemblyReference.cache
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.CustomExceptions\obj\Debug\netcoreapp3.1\InnovativeFarming.CustomExceptions.GeneratedMSBuildEditorConfig.editorconfig
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.CustomExceptions\obj\Debug\netcoreapp3.1\InnovativeFarming.CustomExceptions.AssemblyInfoInputs.cache
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.CustomExceptions\obj\Debug\netcoreapp3.1\InnovativeFarming.CustomExceptions.AssemblyInfo.cs
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.CustomExceptions\obj\Debug\netcoreapp3.1\InnovativeFarming.CustomExceptions.csproj.CoreCompileInputs.cache
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.CustomExceptions\obj\Debug\netcoreapp3.1\InnovativeFarming.CustomExceptions.dll
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.CustomExceptions\obj\Debug\netcoreapp3.1\InnovativeFarming.CustomExceptions.pdb
+D:\FYP\Innovate Farming\Kisan-Snehi-Project\KisanSnehi.CustomExceptions\obj\Debug\netcoreapp3.1\InnovativeFarming.CustomExceptions.genruntimeconfig.cache

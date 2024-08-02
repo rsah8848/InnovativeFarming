@@ -1,0 +1,70 @@
+﻿@model IEnumerable<KisaanSnehiWebApplication.Models.FeedbackModel>
+
+@{
+    ViewData["Title"] = "GetFeedbacks";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<head>
+    <style>
+
+        /* The heart of the matter */
+
+        .horizontal-scrollable > .row {
+            white-space: nowrap;
+        }
+
+            .horizontal-scrollable > .row > .col-xs-4 {
+                display: inline-block;
+                float: none;
+            }
+    </style>
+</head>
+<body>
+    <div style="margin-left: 25%; margin-right: 2%; overflow: auto;">
+        <h1>Feedbacks</h1>
+        <table style="overflow: auto;" class="table table-striped table-bordered table-sm">
+            <thead>
+                <tr>
+                    <th>
+                        Feedback
+                        @*@Html.DisplayNameFor(model => model.FeedbackDesc)*@
+                    </th>
+                    <th>
+                        Status
+                        @*@Html.DisplayNameFor(model => model.Status)*@
+                    </th>
+                    <th>
+                        Reg date
+                        @*@Html.DisplayNameFor(model => model.RegDate)*@
+                    </th>
+                    <th>
+                         
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FeedbackDesc)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.RegDate)
+                        </td>
+                         
+                        <td>
+                            @Html.ActionLink("UpdateToResolved", "ResolveFeedback", new { id = item.FeedbackId }) |
+                            @Html.ActionLink("Details", "FeedbackDeatails", new { id = item.FeedbackId })
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+

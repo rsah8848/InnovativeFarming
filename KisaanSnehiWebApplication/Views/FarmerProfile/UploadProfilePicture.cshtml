@@ -1,0 +1,53 @@
+﻿@model KisaanSnehiWebApplication.Models.RegistrationModel
+
+@{
+    ViewData["Title"] = "UploadProfilePicture";
+    Layout = "~/Views/Shared/_FarmerLayout.cshtml";
+}
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <script type="text/javascript">
+
+            window.onload = function () {
+                alert("Please select profile picture to upload.");
+                window.location.href = "UploadProfilePicture";
+            };
+    </script>
+
+}
+
+<section class="d-flex flex-column justify-content-center align-items-center">
+
+    <div class="row">
+        <div>
+            <h1>Upload Profile Picture</h1>
+            <hr />
+        </div>
+        <div @*class="col-md-4"*@>
+            <form asp-action="UploadProfilePicture" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    @*<label asp-for="ImageFile" class="control-label"></label>*@
+                    <input asp-for="ImageFile" accept="image/*" id="ImageProfile" />
+                    <span asp-validation-for="ImageFile" class="text-danger"></span>
+                    <p>  </p>
+                </div>
+                <br /> <br />
+
+                <div class="form-group">
+                    <input type="submit" value="Upload" class="btn btn-primary" style="background-color:forestgreen; color:white;" />
+
+                    <button formaction="@Url.Action("FarmerProfilePage", "FarmerProfile")#Profile" class="btn btn-outline-secondary" @*style="background-color:forestgreen; color:white; border:18px;"*@>Cancel</button>
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @*<div>
+            <a asp-action="Index"></a>
+        </div>*@
+</section>

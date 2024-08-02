@@ -1,0 +1,52 @@
+﻿@model KisaanSnehiWebApplication.Models.FertilizerModel
+
+@{
+    ViewData["Title"] = "FertilizerDetails";
+    Layout = "~/Views/Shared/_TraderLayout.cshtml";
+}
+
+<div class="modal fade" id="FertilizerDetails">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="FertilizerDetails" style="padding-left:180px; color:forestgreen">Details</h4>
+                <button type="button" class="btn btn-close" data-dismiss="modal" style="background-color:forestgreen; color:white;">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <div>
+
+                    <img src="@("~/FertilizerImages/" + Model.Image)" asp-append-version="true" alt="" class="img-fluid"
+                         style="width:200px; height:170px;"> <br />
+                    @Html.DisplayNameFor(model => model.FertilizerName) : @Html.DisplayFor(modelItem => modelItem.FertilizerName) <br />
+                    @Html.DisplayNameFor(model => model.FertilizerPrice) : @Html.DisplayFor(modelItem => modelItem.FertilizerPrice) <br />
+                    @Html.DisplayNameFor(model => model.FertilizerDesc) : @Html.DisplayFor(modelItem => modelItem.FertilizerDesc) <br />
+                    @Html.DisplayNameFor(model => model.FertilizerQuantity) : @Html.DisplayFor(modelItem => modelItem.FertilizerQuantity) <br />
+                    @Html.DisplayNameFor(model => model.FertilizerQuantityInStock) : @Html.DisplayFor(modelItem => modelItem.FertilizerQuantityInStock) <br />
+                </div>
+
+                    <br />
+
+                    <div class="form-group">
+                        
+                        <button type="button" class="btn btn-secondary close" data-dismiss="modal" style="background-color:forestgreen; color:white;">
+                            <span>Close</span>
+                        </button>
+
+                    </div>
+                
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+</div>

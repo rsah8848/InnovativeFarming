@@ -1,0 +1,54 @@
+﻿@model KisaanSnehiWebApplication.Models.RegistrationModel
+
+@{
+    ViewData["Title"] = "SupplierProfile";
+    Layout = "~/Views/Shared/_SupplierLayout.cshtml";
+}
+
+<head>
+    <link href="~/CSSNew/assets/css/styleProfile.css" rel="stylesheet">
+</head>
+
+<section id="Profile" class="d-flex flex-column justify-content-center align-items-center" style= "margin-left:320px">
+
+    <div>
+        @Html.ActionLink("Edit Profile", "EditSupplierProfile", new { Model = Model }) |
+        @Html.ActionLink("Change Password", "ChangeSupplierPassword", new { Model = Model }) |
+        @Html.ActionLink("Change Profile Picture", "UploadSupplierProfilePicture", new { Model = Model }) |
+        @Html.ActionLink("Remove Profile Picture", "RemoveSupplierProfilePicture", new { Model = Model }) |
+        @Html.ActionLink("Deactivate Account", "DeactivateAccount", new { id = Model.RegId })
+    </div>
+
+    <div class="align-content-center bg-body">
+        <h4></h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.EmailId)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.EmailId)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.PhoneNo)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.PhoneNo)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Address)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Address)
+            </dd>
+        </dl>
+    </div>
+
+</section>
+    

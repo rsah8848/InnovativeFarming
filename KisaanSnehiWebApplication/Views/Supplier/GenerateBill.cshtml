@@ -1,0 +1,43 @@
+﻿@model KisaanSnehiWebApplication.Models.SupplierReceiptModel
+
+@{
+    ViewData["Title"] = "GenerateBill";
+    Layout = "~/Views/Shared/_SupplierLayout.cshtml";
+}
+
+<section id="DisplayCrops" class="d-flex flex-column justify-content-center align-items-center" style="margin-left:320px">
+    <h1>Receipt</h1>
+
+    <div class="align-content-center bg-body">
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.NumberOfItems)
+            </dt>
+            <dd></dd>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.NumberOfItems)
+            </dd>
+            <dd></dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.TotalBill)
+            </dt>
+            <dd></dd>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.TotalBill)
+            </dd>
+            <dd></dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.ReciptDate)
+            </dt>
+            <dd></dd>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.ReciptDate)
+            </dd>
+        </dl>
+    </div>
+    @*<div>
+        <a asp-action="Index">Back</a>
+    </div>*@
+</section>
+    
